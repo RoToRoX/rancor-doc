@@ -4,7 +4,7 @@ In all seriousness, the Rancor microworld is a cutting edge tool for performing 
 Included in this section of the wiki are various write ups about how to use Rancor successfully in your research and without minimal headaches. Please remember that Rancor is in a state of constant development and iteration and therefore may misbehave at times. This wiki will be updated regularly in an effort to ensure that you always have access to the most recent information and instructions from the developers.
 
 Some of the sections of this guide:
-- [General use cases, applications, and terms] (https://github.com/rogerlew/rancor-release/wiki/General-use-cases,-applications,-and-terms)
+- [General use cases, applications, and terms](https://github.com/rogerlew/rancor-release/wiki/General-use-cases,-applications,-and-terms)
 - Aspects of a Rancor Experiment
 - Aspects of the gamification concept
 - How to start up the Rancor Microworld
