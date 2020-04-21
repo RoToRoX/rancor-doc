@@ -3,7 +3,8 @@ An important characteristic of the Rancor microworld is the gamification concept
 ![Revenue and gamification metrics](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/Gamification.PNG)
 
 **Table of Contents**
-[Nuclear Power Overview](## Nuclear Power Overview)
+
+[Nuclear Power Overview](##Nuclear Power Overview)
 ## Interface
 ## Primary Loop (Orange)
 ## Steam Generators
