@@ -2,6 +2,18 @@ An important characteristic of the Rancor microworld is the gamification concept
 
 ![Revenue and gamification metrics](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/Gamification.PNG)
 
+**Table of Contents**
+[Nuclear Power Overview](## Nuclear Power Overview)
+## Interface
+## Primary Loop (Orange)
+## Steam Generators
+## Turbine and Valves
+## Bypass Valve
+## Alarms
+## Power, Efficiency, and Total Revenue
+## The Goal
+## Tips and Tricks
+
 ***
 ## Nuclear Power Overview
 
@@ -56,3 +68,21 @@ A generated revenue is calculated and displayed below the power value. The value
 ## The Goal
 
 The objective of the game is to produce as much power as possible at the highest efficiency. Maximizing power and efficiency are reflected by a faster rate of earning revenue. Additionally, operators are required to be vigilant and therefore a bonus is awarded for correctly detecting and acknowledging markers located throughout the interface. The person that generates the most revenue is eligible for a $25 prize. The person who earns the highest bonus by selecting the markers is eligible for a $25 bonus as well but they must also exceed a minimum threshold for revenue produce of $(XX), so only selecting the markers is not a viable strategy. Lastly, the person who has the best combined score for revenue earned and bonus is eligible for the $50 prize. Winners will be notified at the end of the experiment. Before you being playing the game, you will first get a brief demo of how to operate the plant within each mode. You will be given practice trials. If you have questions please ask, and good luck!
+
+## Tips and tricks
+
+There are multiple strategies to generate power. As you get better you will find a method that works best for you. The following startup strategy is purely a recommendation to begin playing the game. As you learn the system you may find better ways to quickly get online and produce power efficiently. Once you are online you can begin to adjust the number of pumps, reactivity settings and valve positions to find an optimal efficiency. Each pump does cost money but the effect it has on generating power can be worth the cost, so bear that in mind as you are running the plant. Again, your goal is to get the plant online and producing power as quickly as possible, make minor adjustments to raise the efficiency, and make extensive use of the marker bonus to boost your score. Achieving these three goals, in particular the marker bonus, IS the key to getting the high score for the game.
+
+Step 1. Raise the rods about one third to half way up, ~ 65 step height on average. A good temperature goal is around 580F.
+
+TIP: If the reactor temperature exceeds 750F, the reactor will SCRAM, which means all rods will insert fully and reactivity will drop to zero. Heat can be quickly dropped by opening the steam dump valve until it is within a normal range ~650F – 500F.
+
+Step 2. Start two recirculating pumps, in general you want two running
+
+TIP: The turbine cannot be “Latched”, accept steam to spin up, until the reactor core temperature reaches 400F. Conversely, if at any point when the turbine is latched, such as when spinning up or producing power, and the core temperature drops below 400F, the turbine will trip and you will be required to relatch the turbine and open the speed control valve to spin up the turbine again.
+
+Step 3. Open the steam generator out valves. The level will slowly drop, so you can turn on one feed water pump and close the in valves to prevent them from filling too quickly. As necessary open the in valve to maintain 50% levels. Without water you can’t produce steam and your efficiency becomes poor.
+
+Step 4. Select the latch button to begin adding steam to the turbine. Check the Core Temperature to make sure it is not dropping. You actually want it slowly rising since as you add steam to the turbine you are pulling increasing amounts of heat. Open the speed control valve 100%. Monitor core temperature and adjust rods to raise or lower temperature to maintain a relatively steady state.
+
+Step 5. Once the turbine is at speed, select the sync button to open the load control valve. Check the core temperature to make sure it is not dropping. Slowly open the control valve to increase the amount of MWs of power produced. You may need to open the steam generator out valves to get more steam flow. In turn you may need to open the steam generator in valves to maintain 50% level since you are now releasing more steam
