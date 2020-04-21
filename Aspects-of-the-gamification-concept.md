@@ -5,15 +5,24 @@ An important characteristic of the Rancor microworld is the gamification concept
 **Table of Contents**
 
 [Nuclear Power Overview](#Nuclear-Power-Overview)
-## Interface
-## Primary Loop (Orange)
-## Steam Generators
-## Turbine and Valves
-## Bypass Valve
-## Alarms
-## Power, Efficiency, and Total Revenue
-## The Goal
-## Tips and Tricks
+
+[Interface](#Interface)
+
+[Primary Loop (Orange)](#Primary-Loop-(Orange))
+
+[Steam Generators](#Steam-Generators)
+
+[Turbine and Valves](#Turbine-and-Valves)
+
+[Bypass Valve](#Bypass-Valve)
+
+[Alarms](#Alarms)
+
+[Power, Efficiency, and Total Revenue](#Power,-Efficiency,-and-Total-Revenue)
+
+[The Goal](#The-Goal)
+
+[Tips and Tricks](#Tips-and-Tricks)
 
 ***
 ## Nuclear Power Overview
