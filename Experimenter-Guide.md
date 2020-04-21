@@ -5,13 +5,13 @@ Included in this section of the wiki are various write ups about how to use Ranc
 
 Some of the sections of this guide:
 - [General use cases, applications, and terms](https://github.com/rogerlew/rancor-release/wiki/General-use-cases,-applications,-and-terms)
-- Aspects of a Rancor Experiment
-- Aspects of the gamification concept
-- How to start up the Rancor Microworld
-- Setup.exe: How to develop your own 'scenario'
-- Procedures
-- Handling the data
-- Dictionary of parameter terms
-- FAQ
+- [Aspects of a Rancor Experiment](https://github.com/rogerlew/rancor-release/wiki/Aspects-of-a-Rancor-Experiment)
+- [Aspects of the gamification concept](https://github.com/rogerlew/rancor-release/wiki/Aspects-of-the-gamification-concept)
+- [How to start up the Rancor Microworld](https://github.com/rogerlew/rancor-release/wiki/How-to-start-up-the-Rancor-Microworld)
+- [Setup.exe: How to develop your own 'scenario'](https://github.com/rogerlew/rancor-release/wiki/Setup.exe:-How-to-develop-your-own-'scenario')
+- [Procedures](https://github.com/rogerlew/rancor-release/wiki/Procedures)
+- [Handling the data](https://github.com/rogerlew/rancor-release/wiki/Handling-the-data)
+- [Dictionary of parameter terms](https://github.com/rogerlew/rancor-release/wiki/Dictionary-of-parameter-terms)
+- [FAQ](https://github.com/rogerlew/rancor-release/wiki/FAQ)
 
 We look forward to seeing the great research done with the tool!
