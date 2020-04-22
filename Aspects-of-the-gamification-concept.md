@@ -41,7 +41,7 @@ The steam from the steam generators travels to the turbine. The turbine converts
 
 Now that you know how a nuclear power plant works, let’s look at the interface of the nuclear power plant game you will be playing.
 
-The interface is laid out as follows. The graphics in the middle depict the components and is laid out like the general nuclear power overview graphic you have already seen. Annunciators are positioned along the top and indicate states for the components they are located above. Controls are located along the bottom and they are positioned below the components they manipulate.
+The interface has three displays, which include a an overview screen, P&ID, and controls. The P&ID interface is laid out as follows. The graphics in the middle depict the components and is laid out like the general nuclear power overview graphic you have already seen. Annunciators are positioned along the top and indicate states for the components they are located above. Controls are located along the bottom and they are positioned below the components they manipulate.
 
 ## Primary Loop (Orange)
 
