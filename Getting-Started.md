@@ -8,7 +8,7 @@ Rancor is a windows application that uses the .net framework. You can determine 
 In order to run Rancor make sure you have .net 4.6.1 framework or visual studio is installed on your machine. You can download the [.net 4.6.1 framework](https://www.microsoft.com/en-us/download/details.aspx?id=49981).
 
 # Running the Simulation
-
+Follow the instructions [here](https://github.com/rogerlew/rancor-release/wiki/How-to-start-up-the-Rancor-Microworld)
 
 # Github Client
 Under construction
