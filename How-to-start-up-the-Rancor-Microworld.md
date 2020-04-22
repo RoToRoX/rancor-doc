@@ -80,3 +80,10 @@ In addition to the executive, the other three screens that will launch are the o
 ![P&ID screen of the Rancor microworld](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_PID.PNG)
 ![Controls screen of the Rancor microworld](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_controls.PNG)
 ![All screens of Rancor microworld](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_All_Screens.PNG)
+
+#### Setup.exe
+Lastly, the setup application is separate from the main Rancor simulator and is where scenarios are constructed. This is also where additional metadata can be defined, trial length can be set, and faults will be inserted into the simulation. There is a situational awareness section of the setup application that is currently not supported in the mainline Rancor release, but may be added in future instances. If you choose to modify these settings, you can click file at the top left and choose to save the scenario and run the simulation from these parameters. **Warning: This will require some additional configurations in the simulator in order to ensure functionality.**
+
+![Setup application for Rancor microworld](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_setup_landing.PNG)
+![Setup application for Rancor microworld, fault screen](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_setup_faults.PNG)
+![Setup application for Rancor microworld, plant parameters screen](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_setup_plant_tab.PNG)
