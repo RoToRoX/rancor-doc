@@ -7,7 +7,10 @@ This section of the guide assumes that you have the Rancor microworld downloaded
 4. [Executables](#Executables)
 5. [Configuration](#Configuration)
 6. [Data](#Data)
-
+7. [Scenarios](#Scenarios)
+8. [Screenshots](#screenshots)
+9. [Rancor.exe](#Rancor.exe)
+10.[Setup.exe](#Setup.exe)
 ***
 
 
