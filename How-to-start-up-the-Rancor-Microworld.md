@@ -1,5 +1,16 @@
 This section of the guide assumes that you have the Rancor microworld downloaded, unzipped, and have found a home for it locally on your machine. Please refer to the [Getting Started](https://github.com/rogerlew/rancor-release/wiki/Getting-Started) page for instructions on sourcing and downloading the application. This area will guide you through the folder structure of Rancor and ensure you know where things are as you perform your research.
 
+### Sections:
+1. [First Level](#First-level)
+2. [Second Level](#Second-Level)
+3. [Procedures](#Procedures)
+4. [Executables](#Executables)
+5. [Configuration](#Configuration)
+6. [Data](#Data)
+
+***
+
+
 ## First Level
 The initial folders you will see when you open the Rancor application are: .vs, Application, and Rancor wiki icons. The only folder that is critical for operation is the Application folder. The others can be ignored.
 
@@ -22,15 +33,21 @@ This folder defined the look and feel of the Rancor simulation environment. Ther
 ![List of settings files](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_configuration_inifiles.PNG)
 
 1080 - TBD
+
 1440 - TBD
+
 AlarmPanelColor - TBD
+
 IconColor - TBD
+
 Layout1080 - TBD
+
 RadarPlot - TBD
 
 #### Data
 This folder is where your session data will be placed. The images below show a data folder and its contents. Each folder is named by the Trial_Age_Gender_Date paradigm. Further, the actual data sets delivered are an event log in JSON format that lists all control actions or events that occured during the session. The second time series file is a more raw breakdown of the state of every measured parameter at the time scale reported. This is a more granular look at the simulation as a whole but the data may need to be filtered to achieve the desired results.
 
-![Example folder containing Rancor data](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_data_example_folder.png)
-![Example list of data files](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_data_example_files.png)
+![Example folder containing Rancor data](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_data_example_folder.PNG)
+![Example list of data files](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_data_example_files.PNG)
 
+For more detailed information regarding data analysis and specific methods that have been used with success in the past please refer to the [data handling guide](https://github.com/rogerlew/rancor-release/wiki/Handling-the-data).
