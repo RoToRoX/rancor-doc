@@ -7,6 +7,6 @@ The goal of Rancor is to support research operations in advanced and novel proce
 
 ![Cute Horned Monster with Wrench](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/RancorTech.png)   [Rancor Tech](https://github.com/rogerlew/rancor-release/wiki/Rancor-Tech) - Stack, code, etc... The codes.
 
-![Paper with Gear](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/Setup.png)   [Setup Guide](https://github.com/rogerlew/rancor-release/wiki/Setup-Guide) - Mainly for devs who are working to setup Rancor locally.
+![Paper with Gear](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/Setup.png)   [Getting Started](https://github.com/rogerlew/rancor-release/wiki/Getting-Started) - Mainly for devs who are working to setup Rancor locally.
 
 ![Labcoat](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/LabCoat.png)   [Experimenter Guide](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide) - Information for researchers who are planning to use Rancor. Experiment setup, data collection, and FAQ.
