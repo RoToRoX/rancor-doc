@@ -10,7 +10,7 @@ This section of the guide assumes that you have the Rancor microworld downloaded
 7. [Scenarios](#Scenarios)
 8. [Screenshots](#screenshots)
 9. [Rancor.exe](#Rancor.exe)
-10.[Setup.exe](#Setup.exe)
+10. [Setup.exe](#Setup.exe)
 ***
 
 
@@ -54,3 +54,29 @@ This folder is where your session data will be placed. The images below show a d
 ![Example list of data files](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_data_example_files.PNG)
 
 For more detailed information regarding data analysis and specific methods that have been used with success in the past please refer to the [data handling guide](https://github.com/rogerlew/rancor-release/wiki/Handling-the-data).
+
+#### Scenarios
+This folder contains what we refer to as scenarios. They are the collection of plant parameters, faults, measures, and other details about your specific experiment. There are a series of pre-made scenarios that have been used for demonstration or research purposes and these are intended to be used with specific procedures provided in the Rancor installation. Some scenarios simulate steady state, or normal, plant operations while some simulate emergency conditions or sudden failures in plant equipment that require operator action to mitigate and navigate the plant to a safe condition. 
+
+It can be beneficial to explore these scenario files in a text editor or other program to begin to understand how parameters are changed in the simulator and how the scenarios can be developed. You can create bespoke scenarios that focus on your specific areas of interest in the setup application as well, which is explained below.
+
+#### Screenshots
+This folder is where screenshots from the simulator are stored. During the simulator there is a button to take a screenshot of the current state of the screens at that precise moment. These can be useful for evaluating specific states prior to a fault or other devations.
+
+![Snapshot of executive controls](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_default_executive.PNG)
+![Example screenshot files](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_Screenshots_folder_example.PNG)
+
+#### Rancor.exe
+Here is the simulator application. Starting this application will launch into the scenarios folder where you select your specific plant states and parameters and then the Rancor simulator will be built using those states and details. Three screens and the controls panel, which we refer to as the executive, will be available. The screens will be grayed out initially as the simulator is not yet started. The primary controls which you have access to during the simulator session are on the executive and include: starting the simulator, pausing the simulator, taking a screenshot, resetting the simulator to your scenario's starting point, and snapping. 
+
+![Image of the Rancor microworld executive](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_default_executive.PNG)
+![Image of the Rancor microworld executive mid-study](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_filled_executive.PNG)
+
+Of the above functions, most are self-explanatory for the exception of the snap function. This button offers researchers a unique ability to freeze the simulation at a certain point in time and potentially restart from that point. An exmaple application of this could be a research team deciding to adjust their scenario to a specific action of interest that may have become apparent during the experiment but it does not require an entire scenario construction. By snapping you can set a new start point that may be closer to the phenomena you wish to examine and measure. 
+
+In addition to the executive, the other three screens that will launch are the overview, P&ID, and controls screens as shown below in order. The standard configuration is shown next, with the overview on the left and the other views to the right. This is not a required configuration, and the windows are movable and resizeable to accommodate your specfic needs or research environment. From these screens your participants will interact with the simulator until their complete their goal or fail in some manner which causes a reactor trip and ends the simulation by placing the system into shutdown mode.
+
+![Overview screen of the Rancor microworld](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_full_overview.PNG)
+![P&ID screen of the Rancor microworld](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_PID.PNG)
+![Controls screen of the Rancor microworld](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_controls.PNG)
+![All screens of Rancor microworld](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_All_Screens.PNG)
