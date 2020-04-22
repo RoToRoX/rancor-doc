@@ -16,4 +16,9 @@ This folder is where you will likely spend the majority of your time while using
 
 ![Folder structure of executable folder items with highlighted key sections](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_second_level_highlights.png)
 
+#### Configuration
+This folder defined the look and feel of the Rancor simulation environment. There are different settings that can be changed in these files to enable different color schemes and screeen resolutions. 
+
+![List of settings files](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_configuration_inifiles.png)
+
 
