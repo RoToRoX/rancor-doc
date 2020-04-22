@@ -14,6 +14,6 @@ Navigating to procedures will allow you to find and open pdf files of procedures
 ### Executables
 This folder is where you will likely spend the majority of your time while using the Rancor microworld. It includes several folders and a large list of other files which Rancor relies on during the simulation. Refer to the image below, highlighted items are the primary things you will be interacting with and are described below. 
 
-![Folder structure of executable folder items with highlighted key sections](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_second_level_highlights.PNG)
+![Folder structure of executable folder items with highlighted key sections](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_second_level_highlights.png)
 
 
