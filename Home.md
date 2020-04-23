@@ -7,7 +7,7 @@ The goal of Rancor is to support research operations in advanced and novel proce
 
 ![Paper with Gear](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/Setup.png)   [Getting Started](https://github.com/rogerlew/rancor-release/wiki/Getting-Started) - How to Install and Run Rancor
 
-![Labcoat](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/LabCoat.png)   [Experimenter Guide](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide) - Information for researchers
+![Labcoat](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/LabCoat.png)   [Experimenter Guide](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide) - Information for Researchers
 
 ## Simulator Description
 
