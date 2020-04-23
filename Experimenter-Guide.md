@@ -39,3 +39,7 @@ Throughout this wiki and research documents published using the Rancor microworl
 - Trip: When we talk about a reactor trip or you see the 'Trip reactor' button this is very similar to tripping a breaker in your home. When you trip a nuclear reactor you are throwing a switch which actuated the control rods to halt the nuclear fission reaction in the core. Trips are safety-driven actions and can have large operational and financial impacts in the nuclear power industry.
 - INI file: Pronounced eye-en-eye file. These are files in the configuration folder within the Executables folder. Currently these are the way we adjust settings in the Rancor simulator, such as screen size, radar plot characteristics, colors, etc. Colors are required to be in hexadecimal or color name formats.
 - Auto/Manual: These terms are fairly obvious, however it doesn't hurt to explain what these mean in the context of a Rancor experiment. Auto will perform control actions in response to the simulation and various critical parameters. This will only maintain a steady state unless you have enacted a set goal (60% power) then it will navigate to that according to its own logic. By the inverse manual requires input from the participant to affect change in the given system and the participant will be required to respond to the changes in states and system contexts.
+
+# Scenario Authoring
+
+Scenarios can be authored using the Setup.exe program provided with Rancor.
