@@ -1,3 +1,9 @@
+## Table of Contents
+
+* [Installation](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#installation)
+* [Running Rancor](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#running-rancor)
+* [Procedures](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#procedures)
+
 # Installation
 
 Download the [.zip](https://github.com/rogerlew/rancor-release/archive/master.zip) file of the project or alternatively use a git client (Github Client) to clone the repository.
@@ -103,7 +109,18 @@ Lastly, the setup application is separate from the main Rancor simulator and is 
 
 Procedures have been developed to startup, shutdown, and handle abnormal events. The current catalog of procedures contains:
 
-[OP-001 Startup]
+[OP-001 Startup](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/OP-001_Startup.pdf)
 
+[OP-002 Shutdown](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/OP-002-Shutdown.pdf)
 
+[OP-010 Manual Reactor Control](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/OP-010_Manual_Reactor_Control.pdf)
 
+[OP-011 Manual Feedwater Control](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/OP-011_Manual_Feedwater_Control.pdf)
+
+[AOP-001 Rapid Shutdown](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/AOP-001_Rapid_Shutdown.pdf)
+
+[EOP-E-1 Loss of Coolant Accident](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/EOP-E-1_Loss_of_Primary_Coolant.pdf)
+
+[EOP-E-2 Loss of Feedwater](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/EOP-E-2_Loss_of_Feedwater.pdf)
+
+[EOP-E-3 Steam Generator Tube Rupture](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/EOP-E-3_Steam_Generator_Tube_Rupture.pdf)
