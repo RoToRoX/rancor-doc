@@ -1,4 +1,4 @@
-## Table of Contents
+### Table of Contents
 
 * [Installation](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#installation)
 * [Running Rancor](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#running-rancor)
