@@ -9,7 +9,7 @@
 [Getting Started](https://github.com/rogerlew/rancor-release/wiki/Getting-Started)
 * [Installation](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#installation)
 * [Running Rancor](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#running-rancor)
-* [Procedures](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#procedures)
+* [Procedures](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#procedures-1)
 
 <hr/>
 
