@@ -1,18 +1,18 @@
 # Welcome to the high stakes world of simulated nuclear reactors!
 
-The Rancor microworld is a tool for performing quick testing of novel HMI systems related to nuclear power and can be a very potent method to validate your research. 
+The Rancor microworld is a tool for performing quick testing of novel HMI systems related to nuclear power and can be a very potent method to validate your research.
 
 ### Table of Contents
 
-* [Scenario Design](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide#scenario-design)
-* [General Use Cases and Terms](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide#general-use-cases-and-terms)
-* [Scenario Authoring](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide#scenario-authoring)
-* [Model Parameters](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide#model-parameters)
-* [Simulator Outputs](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide#simulator-outputs)
+* [Scenario Design](Experimenter-Guide#scenario-design)
+* [General Use Cases and Terms](Experimenter-Guide#general-use-cases-and-terms)
+* [Scenario Authoring](Experimenter-Guide#scenario-authoring)
+* [Model Parameters](Experimenter-Guide#model-parameters)
+* [Simulator Outputs](Experimenter-Guide#simulator-outputs)
 
 # Scenario Design
 
-An experiment has some primary aspects that underpin your design and frame your research question. This section will breakdown the common aspects of an experiment using the Rancor microworld. 
+An experiment has some primary aspects that underpin your design and frame your research question. This section will breakdown the common aspects of an experiment using the Rancor microworld.
 
 A Rancor experiment has the following primary features:
 - Time
@@ -24,7 +24,7 @@ A Rancor experiment has the following primary features:
 This factor is the time of the study or experimental session that your participant will experience (endure?). This can be set to any time in seconds and should align with your overall experimental design. It is important to test this with the scenarios and procedures you have in mind to ensure that your chosen time scale gives your participant sufficient time to complete the steps needed for your experiment.
 
 ### Plant States
-These are loaded with default values by the developers to ensure the system will actually launch and the simulation will be stable, at least for a little while. However, a large number of parameters can be modified if you require a different starting position or starting plant context for your study. Please see the [dictionary of parameters](https://github.com/rogerlew/rancor-release/wiki/Dictionary-of-parameter-terms) for more detailed information on those options.
+These are loaded with default values by the developers to ensure the system will actually launch and the simulation will be stable, at least for a little while. However, a large number of parameters can be modified if you require a different starting position or starting plant context for your study. Please see the [dictionary of parameters](Dictionary-of-parameter-terms) for more detailed information on those options.
 
 ### Faults
 These are the primary independent variables for Rancor microworld studies. This is where the primary experimental manipulation will be. These faults are defined by a set of control actions or changes to the simulation values and a time or condition-based trigger. This enables the researcher to force users into various situations outside of a standard steady-state operation. These abnormal or emergency scenarios are frequently accompanied by procedures to help guide the participant through the instance.
@@ -37,11 +37,11 @@ The Rancor microworld is a simplified nuclear reactor simulation platform design
 # General Use Cases and Terms
 
 ## Use cases
-The platform has been used to assess situational awareness, learnability, different control schemes, overviews, alarm systems, and more. The high level of configurability and malleability of the system allows for increases to potential experimental models and research questions. 
+The platform has been used to assess situational awareness, learnability, different control schemes, overviews, alarm systems, and more. The high level of configurability and malleability of the system allows for increases to potential experimental models and research questions.
 
 ## Terms
-Throughout this wiki and research documents published using the Rancor microworld you will see some frequently used terms that we want to define here. 
-- Scenario: This one is a very frequently used term. A scenario is the set of rules, parameters, faults, variables, or manipulations that your experiment may use. These 'settings' for lack of a better term are dynamic and can be tweaked to suit your research needs. 
+Throughout this wiki and research documents published using the Rancor microworld you will see some frequently used terms that we want to define here.
+- Scenario: This one is a very frequently used term. A scenario is the set of rules, parameters, faults, variables, or manipulations that your experiment may use. These 'settings' for lack of a better term are dynamic and can be tweaked to suit your research needs.
 - Procedure: As this is a child of nuclear power and the simulators in that industry there are a set of procedures that you will use to guide your participants to their goal. While you can use the microworld without a procedure, it may prove extremely difficult to manage the parameters and systems on the fly. When we use the term procedure we truly do mean a step by step guide on manipulating the reactor to the desired end goal of the scenario.
 - P&ID: A P&ID is also known as a piping and instrumentation diagram and serves as a model of the system. When launched in the standard mode it is the window on the top right of your screen.
 - Radar plot: This is the spoke-and-wheel looking overview object on the left of the default launched program. This is a configurable visualization that serves to show several different variables of interest in an effort to create a visually salient shape that can be associated with a given plant state.

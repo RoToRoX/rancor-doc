@@ -1,6 +1,6 @@
 An important characteristic of the Rancor microworld is the gamification concept that is embedded into the system. You can see these aspects in the interface shown below. The original incarnation of the Rancor microworld was tested and validated using university students in psychology. Therefore there was a need for a compelling reason to be engaged in navigating procedures and a nuclear reactor. Shown below is a set of the gamification instructions that were used for previous studies and may be useful for your information.
 
-![Revenue and gamification metrics](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Gamification.PNG)
+![Revenue and gamification metrics](images/Gamification.PNG)
 
 **Table of Contents**
 
