@@ -43,3 +43,11 @@ Throughout this wiki and research documents published using the Rancor microworl
 # Scenario Authoring
 
 Scenarios can be authored using the Setup.exe program provided with Rancor.
+
+# Model Parameters
+
+The model contains several parameters or "points" to keep track of the system states. The scenario files define the initial conditions of the model states as well as fault conditions. This table provides a description for most of the model parameters.
+
+# Simulator Outputs
+
+For each trial the simulator will produce two output files. One output is a spreadsheet (.csv) file with the time series of the model parameters at each timestep of the model. In addition to the time series output an event log is produced as a .json file. The event log contains operator actions as well as system events like reactor scrams.
