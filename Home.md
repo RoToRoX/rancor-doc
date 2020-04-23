@@ -6,9 +6,9 @@ The Rancor microworld simulates a simplified nuclear process comprised of a nucl
 The goal of Rancor is to support research operations in advanced and novel process control industries HMI design and human factors.
 
 # Links
-![Paper with Gear](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/Setup.png)   [Getting Started](https://github.com/rogerlew/rancor-release/wiki/Getting-Started) - Mainly for devs who are working to setup Rancor locally.
+![Paper with Gear](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/Setup.png)   [Getting Started](https://github.com/rogerlew/rancor-release/wiki/Getting-Started) - How to Install and Run Rancor
 
-![Labcoat](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/LabCoat.png)   [Experimenter Guide](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide) - Information for researchers who are planning to use Rancor. Experiment setup, data collection, and FAQ.
+![Labcoat](https://github.com/rogerlew/rancor-release/blob/master/Rancor_wiki_icons/LabCoat.png)   [Experimenter Guide](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide) - Information for researchers
 
 ## Gamified Thermohydraulic Simulation
 
