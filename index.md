@@ -5,9 +5,9 @@ The Rancor microworld simulates a simplified nuclear process comprised of a nucl
 
 The goal of Rancor is to support research operations in advanced and novel process control industries HMI design and human factors.
 
-![Paper with Gear](images/Setup.png)   [Getting Started](Getting-Started) - How to Install and Run Rancor
+![Paper with Gear](wiki_icons/Setup.png)   [Getting Started](Getting-Started) - How to Install and Run Rancor
 
-![Labcoat](images/LabCoat.png)   [Experimenter Guide](Experimenter-Guide) - Information for Researchers
+![Labcoat](wiki_icons/LabCoat.png)   [Experimenter Guide](Experimenter-Guide) - Information for Researchers
 
 ## Simulator Description
 
