@@ -105,7 +105,7 @@ Lastly, the setup application is separate from the main Rancor simulator and is 
 ![Setup application for Rancor microworld, fault screen](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_setup_faults.PNG)
 ![Setup application for Rancor microworld, plant parameters screen](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_setup_plant_tab.PNG)
 
-# Procedures
+# Procedure Catalog
 
 Procedures have been developed to startup, shutdown, and handle abnormal events. The current catalog of procedures contains:
 
