@@ -1,6 +1,6 @@
 # Welcome to the high stakes world of simulated nuclear reactors!
 
-In all seriousness, the Rancor microworld is a cutting edge tool for performing quick testing of novel HMI systems related to nuclear power and can be a very potent method to validate your research. 
+The Rancor microworld is a cutting edge tool for performing quick testing of novel HMI systems related to nuclear power and can be a very potent method to validate your research. 
 
 ### Table of Contents
 
