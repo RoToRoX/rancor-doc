@@ -8,10 +8,10 @@
 
 Download the [.zip](https://github.com/rogerlew/rancor-release/archive/master.zip) file of the project or alternatively use a git client (Github Client) to clone the repository.
 
-## Determine if .net 4.6.1 framework is installed on your machine.
+## Determine if .NET 4.6.1 framework is installed on your machine.
 Rancor is a windows application that uses the .net framework. You can determine which version of the .net framework are installed on windows machine by following [these instructions](https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
 
-In order to run Rancor make sure you have .net 4.6.1 framework or visual studio installed on your machine. You can download the [.net 4.6.1 framework](https://www.microsoft.com/en-us/download/details.aspx?id=49981).
+In order to run Rancor make sure you have .NET 4.6.1 framework or Visual Studio installed on your machine. You can download the [.NET 4.6.1 framework](https://www.microsoft.com/en-us/download/details.aspx?id=49981).
 
 # Running Rancor
 
@@ -52,17 +52,17 @@ This folder defined the look and feel of the Rancor simulation environment. Ther
 
 ![List of settings files](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_configuration_inifiles.PNG)
 
-1080 - TBD
+1080 - configuration for a 1920x1080 screen
 
-1440 - TBD
+1440 - configuration for a 2560x1440 screen
 
-AlarmPanelColor - TBD
+AlarmPanelColor - configuration colors of the alarm panel
 
 IconColor - TBD
 
 Layout1080 - TBD
 
-RadarPlot - TBD
+RadarPlot - configuration for the radar plot parameters
 
 #### Data
 This folder is where your session data will be placed. The images below show a data folder and its contents. Each folder is named by the Trial_Age_Gender_Date paradigm. Further, the actual data sets delivered are an event log in JSON format that lists all control actions or events that occured during the session. The second time series file is a more raw breakdown of the state of every measured parameter at the time scale reported. This is a more granular look at the simulation as a whole but the data may need to be filtered to achieve the desired results.
