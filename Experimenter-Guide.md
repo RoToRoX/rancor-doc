@@ -58,7 +58,7 @@ Scenarios can be authored using the Setup.exe program provided with Rancor.
 The model contains several parameters or "points" to keep track of the system states. The scenario files define the initial conditions of the model states as well as fault conditions. This table provides a description for most of the model parameters.
 
 | Point               | Description                                         | Value (Range)         |
-| ------------------- |:---------------------------------------------------:| ---------------------:|
+| ------------------- | --------------------------------------------------- | --------------------- |
 | TimeMultiplier      | Used by the model to control the speed of the model | 0.05                  |
 | ModeValue           | integer specifying the state of the plant           | 0= Shutdown,          |
 |                     |                                                     | 1= Reactor Startup,   |
