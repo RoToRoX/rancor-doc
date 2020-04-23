@@ -18,8 +18,8 @@ In order to run Rancor make sure you have .net 4.6.1 framework or visual studio 
 This section of the guide assumes that you have the Rancor microworld downloaded, unzipped, and have found a home for it locally on your machine. Please refer to the [Getting Started](https://github.com/rogerlew/rancor-release/wiki/Getting-Started) page for instructions on sourcing and downloading the application. This area will guide you through the folder structure of Rancor and ensure you know where things are as you perform your research.
 
 ### Sections:
-1. [First Level](#First-level)
-2. [Second Level](#Second-Level)
+1. [First Level Directory](#First-level-directory)
+2. [Second Level Directory](#Second-Level-directory)
 3. [Procedures](#Procedures)
 4. [Executables](#Executables)
 5. [Configuration](#Configuration)
@@ -31,12 +31,12 @@ This section of the guide assumes that you have the Rancor microworld downloaded
 ***
 
 
-## First Level
+## First Level Directory
 The initial folders you will see when you open the Rancor application are: .vs, Application, and Rancor wiki icons. The only folder that is critical for operation is the Application folder. The others can be ignored.
 
 ![Rancor folder structure with box highlighting application folder](https://github.com/rogerlew/rancor-release/blob/master/Rancor_images/Rancor_top_level_folder_structure.PNG)
 
-## Second Level - Executables and Procedures
+## Second Level Directory - Executables and Procedures
 This is the primary delineation between the procedure documentation and the main application files. 
 
 ### Procedures
