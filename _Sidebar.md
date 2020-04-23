@@ -4,14 +4,14 @@
 * [Use Cases](https://github.com/rogerlew/rancor-release/wiki#use-cases)
 * [Copyright](https://github.com/rogerlew/rancor-release/wiki#copyright)
 
-<br/>
+<hr/>
 
 [Getting Started](https://github.com/rogerlew/rancor-release/wiki/Getting-Started)
 * [Installation](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#installation)
 * [Running Rancor](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#running-rancor)
 * [Procedures](https://github.com/rogerlew/rancor-release/wiki/Getting-Started#procedures)
 
-<br/>
+<hr/>
 
 [Experimenter Guide](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide)
 * [Scenario Design](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide#scenario-design)
