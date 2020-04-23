@@ -57,6 +57,18 @@ Scenarios can be authored using the Setup.exe program provided with Rancor.
 
 The model contains several parameters or "points" to keep track of the system states. The scenario files define the initial conditions of the model states as well as fault conditions. This table provides a description for most of the model parameters.
 
+| Point               | Description                                         | Value (Range)         |
+| ------------------- |:---------------------------------------------------:| ---------------------:|
+| TimeMultiplier      | Used by the model to control the speed of the model | 0.05                  |
+| ModeValue           | integer specifying the state of the plant           | 0= Shutdown,          |
+|                     |                                                     | 1= Reactor Startup,   |
+|                     |                                                     | 2= Ready To Roll,     |
+|                     |                                                     | 3= Turbine Rollup,    |
+|                     |                                                     | 4= Ready to Sync.,    |
+|                     |                                                     | 5= Online,            |
+|                     |                                                     | 9= Unknown            |
+| ControlsActive      | Operator can manipulate the controls                | true                  |
+
 # Simulator Outputs
 
 For each trial the simulator will produce two output files. One output is a spreadsheet (.csv) file with the time series of the model parameters at each timestep of the model. In addition to the time series output an event log is produced as a .json file. The event log contains operator actions as well as system events like reactor scrams.
