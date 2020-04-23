@@ -1,5 +1,14 @@
 # Welcome to the high stakes world of simulated nuclear reactors!
+
 In all seriousness, the Rancor microworld is a cutting edge tool for performing quick testing of novel HMI systems related to nuclear power and can be a very potent method to validate your research. 
+
+### Table of Contents
+
+* [Scenario Design](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide#scenario-design)
+* [General Use Cases and Terms](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide#general-use-cases-and-terms)
+* [Scenario Authoring](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide#scenario-authoring)
+* [Model Parameters](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide#model-parameters)
+* [Simulator Outputs](https://github.com/rogerlew/rancor-release/wiki/Experimenter-Guide#simulator-outputs)
 
 # Scenario Design
 
