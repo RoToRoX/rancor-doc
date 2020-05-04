@@ -9,6 +9,7 @@ The Rancor microworld is a tool for performing quick testing of novel HMI system
 * [Scenario Authoring](Experimenter-Guide#scenario-authoring)
 * [Model Parameters](Experimenter-Guide#model-parameters)
 * [Simulator Outputs](Experimenter-Guide#simulator-outputs)
+* [Data Analysis](Experimenter-Guide#data-analysis)
 
 # Scenario Design
 
@@ -72,3 +73,7 @@ The model contains several parameters or "points" to keep track of the system st
 # Simulator Outputs
 
 For each trial the simulator will produce two output files. One output is a spreadsheet (.csv) file with the time series of the model parameters at each timestep of the model. In addition to the time series output an event log is produced as a .json file. The event log contains operator actions as well as system events like reactor scrams.
+
+# Data Analysis
+
+Under Construction - stay tuned Jinding!
