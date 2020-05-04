@@ -70,7 +70,7 @@ This folder is where your session data will be placed. The images below show a d
 ![Example folder containing Rancor data](images/Rancor_data_example_folder.PNG)
 ![Example list of data files](images/Rancor_data_example_files.PNG)
 
-For more detailed information regarding data analysis and specific methods that have been used with success in the past please refer to the [data handling guide](Handling-the-data).
+For more detailed information regarding data analysis and specific methods that have been used with success in the past please refer to the [Data Handling Guide](Experimenter-Guide#data-handling-guide).
 
 #### Scenarios
 This folder contains what we refer to as scenarios. They are the collection of plant parameters, faults, measures, and other details about your specific experiment. There are a series of pre-made scenarios that have been used for demonstration or research purposes and these are intended to be used with specific procedures provided in the Rancor installation. Some scenarios simulate steady state, or normal, plant operations while some simulate emergency conditions or sudden failures in plant equipment that require operator action to mitigate and navigate the plant to a safe condition.
