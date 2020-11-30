@@ -47,13 +47,13 @@
 <dt>TEDL Hot Standby</dt>
 <dd>TEDL Pump is on and TEDL FT-1007 Flow is greater than 0 KPPH and less than 400 KPPH and<br/>
   TEDL TT-1006 EHX-2 Shell Side Outlet Temperature greater than 205 DEGF and<br/>
-  TEDL TT-1007 EHX-1 Shell Side Intlet Temperature greater than 210 DEGF
+  TEDL TT-1005 EHX-1 Tube Side Outlet Temperature greater than 210 DEGF
 </dd>  
      
 <dt>TEDL Online</dt>
 <dd>TEDL Pump is on and TEDL FT-1007 Flow is greater than 400 KPPH and<br/>
   TEDL TT-1006 EHX-2 Shell Side Outlet Temperature greater than 205 DEGF and<br/>
-  TEDL TT-1007 EHX-1 Shell Side Intlet Temperature greater than 210 DEGF
+  TEDL TT-1005 EHX-1 Tube Side Outlet Temperature greater than 210 DEGF
 </dd>  
 </dl>    
     
