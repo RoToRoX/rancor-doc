@@ -9,6 +9,7 @@ The Rancor microworld is a tool for performing quick testing of novel HMI system
 * [Scenario Authoring](Experimenter-Guide#scenario-authoring)
 * [Model Parameters](Experimenter-Guide#model-parameters)
 * [Simulator Outputs](Experimenter-Guide#simulator-outputs)
+* [FPOG Guide](FPOG-Guide)
 
 # Scenario Design
 
