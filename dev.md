@@ -5,7 +5,7 @@ Contains Rancor source code
 
 https://github.com/rogerlew/rancor
  
-The highperf-hmi branch actually has Kairos related HMIs (High Performance HMI variants)
+The highperf-hmi branch has Kairos TCF related HMIs (High Performance HMI variants)
 https://github.com/rogerlew/rancor/tree/highperf-hmi
 
 
