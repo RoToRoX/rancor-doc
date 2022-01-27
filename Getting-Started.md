@@ -4,6 +4,10 @@
 * [Running Rancor](Getting-Started#running-rancor)
 * [Procedures](Getting-Started#procedures-catalog)
 
+# System Requirements
+
+The system requirements for Rancor are modest. Most of the testing is done on a 2012 Dell 7010 with an i7-3770 16 GB of memory and a basic Micron 256 GB SSD.
+
 # Installation
 
 Download the [.zip](https://github.com/rogerlew/rancor-release/archive/master.zip) file of the project or alternatively use a git client (Github Client) to clone the repository. **Requires collaborator access to the rancor-release repository**
