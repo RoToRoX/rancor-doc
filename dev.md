@@ -8,6 +8,10 @@ https://github.com/rogerlew/rancor
 The highperf-hmi branch has Kairos TCF related HMIs (High Performance HMI variants)
 https://github.com/rogerlew/rancor/tree/highperf-hmi
 
+The cbp_api branch has Tom's file based API
+https://github.com/rogerlew/rancor/tree/cbp_api
+
+
 
 ## Rancor-Release
 
@@ -32,7 +36,7 @@ https://github.com/rogerlew/rancor-doc
 
 ## Rancor2.0-model 
 
-Contains new python based reduce order model with web API
+Contains new python based reduce order model with web API (co-authored by Bikash Poudel)
 
 https://github.com/rogerlew/rancor2.0-model/
  
@@ -61,3 +65,10 @@ https://github.com/rogerlew/rancor-unity-dll/
 Example project running .NET Rancor model in Unity3d using c# source
 
 https://github.com/rogerlew/rancor-unity-source/
+
+
+## Rancor-cbp
+
+.NET CBP prototype developed by Stacey Whitmore
+
+https://github.com/rogerlew/rancor-cbp
