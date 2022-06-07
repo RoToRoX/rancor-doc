@@ -10,7 +10,7 @@ The system requirements for Rancor are modest. Most of the testing is done on a 
 
 # Installation
 
-Download the [.zip](https://github.com/rogerlew/rancor-release/archive/master.zip) file of the project or alternatively use a git client (Github Client) to clone the repository. **Requires collaborator access to the rancor-release repository**
+Download the [.zip](https://github.com/RoToRoX/rancor-release/archive/master.zip) file of the project or alternatively use a git client (Github Client) to clone the repository. **Requires collaborator access to the rancor-release repository**
 
 ## Determine if .NET 4.6.1 framework is installed on your machine.
 Rancor is a windows application that uses the .net framework. You can determine which version of the .net framework are installed on windows machine by following [these instructions](https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
@@ -114,18 +114,18 @@ Lastly, the setup application is separate from the main Rancor simulator and is 
 Procedures have been developed to startup, shutdown, and handle abnormal events. The current catalog of procedures contains:
 **Viewing procedures requires collaborator access to the rancor-release repository**
 
-[OP-001 Startup](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/OP-001_Startup.pdf)
+[OP-001 Startup](https://github.com/RoToRoX/rancor-release/blob/master/Application/Procedures/English_Units/OP-001_Startup.pdf)
 
-[OP-002 Shutdown](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/OP-002-Shutdown.pdf)
+[OP-002 Shutdown](https://github.com/RoToRoX/rancor-release/blob/master/Application/Procedures/English_Units/OP-002-Shutdown.pdf)
 
-[OP-010 Manual Reactor Control](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/OP-010_Manual_Reactor_Control.pdf)
+[OP-010 Manual Reactor Control](https://github.com/RoToRoX/rancor-release/blob/master/Application/Procedures/English_Units/OP-010_Manual_Reactor_Control.pdf)
 
-[OP-011 Manual Feedwater Control](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/OP-011_Manual_Feedwater_Control.pdf)
+[OP-011 Manual Feedwater Control](https://github.com/RoToRoX/rancor-release/blob/master/Application/Procedures/English_Units/OP-011_Manual_Feedwater_Control.pdf)
 
-[AOP-001 Rapid Shutdown](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/AOP-001_Rapid_Shutdown.pdf)
+[AOP-001 Rapid Shutdown](https://github.com/RoToRoX/rancor-release/blob/master/Application/Procedures/English_Units/AOP-001_Rapid_Shutdown.pdf)
 
-[EOP-E-1 Loss of Coolant Accident](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/EOP-E-1_Loss_of_Primary_Coolant.pdf)
+[EOP-E-1 Loss of Coolant Accident](https://github.com/RoToRoX/rancor-release/blob/master/Application/Procedures/English_Units/EOP-E-1_Loss_of_Primary_Coolant.pdf)
 
-[EOP-E-2 Loss of Feedwater](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/EOP-E-2_Loss_of_Feedwater.pdf)
+[EOP-E-2 Loss of Feedwater](https://github.com/RoToRoX/rancor-release/blob/master/Application/Procedures/English_Units/EOP-E-2_Loss_of_Feedwater.pdf)
 
-[EOP-E-3 Steam Generator Tube Rupture](https://github.com/rogerlew/rancor-release/blob/master/Application/Procedures/English_Units/EOP-E-3_Steam_Generator_Tube_Rupture.pdf)
+[EOP-E-3 Steam Generator Tube Rupture](https://github.com/RoToRoX/rancor-release/blob/master/Application/Procedures/English_Units/EOP-E-3_Steam_Generator_Tube_Rupture.pdf)
