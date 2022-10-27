@@ -1,4 +1,4 @@
-Welcome to the Rancor wiki page.
+Welcome to the Rancor wiki page. Most of the content is public, but some requires access to the rancor-release and rancor-procedures repositories. Make sure you have access and are logged in to view these resources.
 
 # Rancor Overview
 The Rancor microworld simulates a simplified nuclear process comprised of a nuclear reactor core that provides the heat source for gamified water-based Rankine cycle simulation. In fact, the name Rancor, bestowed upon the microworld, was formed by combining the first part of the term Rankine with an abbreviation of the term core to denote a nuclear reactor core as the boiler within the Rankine cycle.
