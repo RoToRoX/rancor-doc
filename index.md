@@ -22,5 +22,9 @@ For more information see the [Detailed Simulator Description](Detailed-Simulator
 ## Use Cases
 The Rancor microworld serves to perform rapid prototyping and human factors testing of novel control room design concepts due its reduced scale and ease of developing new components. Use of the microworld is primarily intended for research purposes and to support the continued development of modern, digital reactor control interfaces. The microworld gives researchers and designers a broad selection of faults, manipulations, and process modifications to test against and develop an understanding of what impacts a participant's ability to successfully operate the microworld.
 
+## Web-API
+
+Rancor has a built-in Web-API to support the client server functionality. See [Web-API](Web-API) for more information.
+
 ### Copyright
 Copyright in software entitled, "RANCOR Microworld Simulation Environment for Nuclear Process Control", copyright assertion extension granted by DOE to BEA on 9/27/18, for a period of ten (10) years, having BEA Attorney Docket No. CW-18-08.
