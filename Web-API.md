@@ -67,7 +67,7 @@ Returns `200 OK` after the assignment is queued on the UI thread.
 POST /api/units/{unitId}/executemethod?methodName={name}
 ```
 
-Invokes an exposed public method on the Unit ViewModel (list provided elsewhere).
+Invokes an exposed public method on the Unit ViewModel.
 
 > Example – turbine SCRAM
 >
@@ -75,6 +75,8 @@ Invokes an exposed public method on the Unit ViewModel (list provided elsewhere)
 > curl -X POST "http://localhost:7200/api/units/1/executemethod?methodName=ScramTurbine"
 > ```
 
+For full list of methods see:
+[UnitModel Reference](UnitModel-Reference.md)
 ---
 
 ## 3. Simulator‑Wide Endpoints (`/api/rancorsim/...`)
@@ -171,7 +173,8 @@ Binary payload matching [`RancorSimBaseDTO`](https://github.com/RoToRoX/rancor-d
 
 ---
 
-### Appendix A — DTO Reference
+### Resources
 
 - [`UnitModelBaseDTO` (fields & order)](https://github.com/RoToRoX/rancor-doc/blob/master/UnitModelBaseDTO.cs)
 - [`RancorSimBaseDTO` (fields & order)](https://github.com/RoToRoX/rancor-doc/blob/master/RancorSimBaseDTO.cs)
+- [UnitModel Reference](UnitModel-Reference.md)
