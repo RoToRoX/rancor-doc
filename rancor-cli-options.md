@@ -24,8 +24,6 @@
 Save this as `launch_startup.bat` in your `Application` folder and double-click to run:
 
 ```bat
-@echo off
-cd /d "%~dp0"
 Rancor.exe --headless ^
             --settings Config\Settings\dev-settings.json ^
             --scenario Config\Scenarios\Normal\Scn2_Startup_MOL.json
