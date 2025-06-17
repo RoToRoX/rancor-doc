@@ -26,5 +26,9 @@ The Rancor microworld serves to perform rapid prototyping and human factors test
 
 Rancor has a built-in Web-API to support the client server functionality. See [Web-API](Web-API) for more information.
 
+## Rancor CLI arguments
+
+Scenarios, settings, and other parameters can be configured through command line arguments. For more information see [Rancor CLI Options](rancor-cli-options.md)
+
 ### Copyright
 Copyright in software entitled, "RANCOR Microworld Simulation Environment for Nuclear Process Control", copyright assertion extension granted by DOE to BEA on 9/27/18, for a period of ten (10) years, having BEA Attorney Docket No. CW-18-08.
