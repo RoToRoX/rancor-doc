@@ -173,6 +173,80 @@ Binary payload matching [`RancorSimBaseDTO`](https://github.com/RoToRoX/rancor-d
 
 ---
 
+## Individual Rod Control via Web API
+
+This guide explains how to control the position of individual control rods in Rancor 3.0 using the existing Unit property API. You first switch rod control to manual mode and then set each rod’s position independently.
+
+### Summary
+
+- Set `RodCtrlMode` to `0` to enable manual rod control.
+- Adjust `Rod1`, `Rod2`, `Rod3`, and `Rod4` independently.
+- Position scale:
+  - `100` = fully inserted (all the way down; as when scrammed)
+  - `0` = fully withdrawn (all the way out)
+  - Use intermediate values for partial insertion
+
+### API Endpoints Used
+
+- Set a Unit property:
+  - `POST /api/units/{unitId}/setproperty?propertyName={prop}&value={val}`
+
+Replace `{unitId}` with the target unit’s ID (for example, `1`, `A`, etc.).
+
+### Recommended Workflow
+
+1. Optionally pause the simulator:
+   - `POST /api/rancorsim/setstate/freeze`
+2. Enable manual rod control (`RodCtrlMode = 0`).
+3. Set the desired positions for `Rod1`–`Rod4`. Move in increments of 5
+4. Optionally resume the simulator:
+   - `POST /api/rancorsim/setstate/run`
+
+### Examples
+
+#### Using curl (Linux/macOS/Windows curl.exe)
+
+Enable manual rod control:
+
+```bash
+curl -X POST "http://localhost:7200/api/units/1/setproperty?propertyName=RodCtrlMode&value=0"
+```
+
+Set individual rod positions (example values):
+
+```bash
+curl -X POST "http://localhost:7200/api/units/1/setproperty?propertyName=Rod1&value=95"
+curl -X POST "http://localhost:7200/api/units/1/setproperty?propertyName=Rod2&value=95"
+curl -X POST "http://localhost:7200/api/units/1/setproperty?propertyName=Rod3&value=95"
+curl -X POST "http://localhost:7200/api/units/1/setproperty?propertyName=Rod4&value=95"
+```
+
+#### Using PowerShell (Windows)
+
+Note: In PowerShell, `curl` is an alias for `Invoke-WebRequest` and does not support `-X`. Use `Invoke-WebRequest` directly:
+
+Enable manual rod control:
+
+```powershell
+Invoke-WebRequest -Uri "http://localhost:7200/api/units/1/setproperty?propertyName=RodCtrlMode&value=0" -Method POST
+```
+
+Set individual rod positions:
+
+```powershell
+Invoke-WebRequest -Uri "http://localhost:7200/api/units/1/setproperty?propertyName=Rod1&value=95" -Method POST
+Invoke-WebRequest -Uri "http://localhost:7200/api/units/1/setproperty?propertyName=Rod2&value=95" -Method POST
+Invoke-WebRequest -Uri "http://localhost:7200/api/units/1/setproperty?propertyName=Rod3&value=95" -Method POST
+Invoke-WebRequest -Uri "http://localhost:7200/api/units/1/setproperty?propertyName=Rod4&value=95" -Method POST
+```
+
+## Notes
+
+- Default base URL: `http://<host>:7200/` (configurable in `appsettings.json`).
+- HTTP 200 indicates success; 400 indicates invalid parameters; 500 indicates a server error.
+- Values are expressed as integers from `0` to `100` inclusive (0 = out, 100 = in).
+- Adjust `unitId` if you are controlling a different unit.
+
 ### Resources
 
 - [`UnitModelBaseDTO` (fields & order)](https://github.com/RoToRoX/rancor-doc/blob/master/UnitModelBaseDTO.cs)
