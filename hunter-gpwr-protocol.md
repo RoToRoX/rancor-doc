@@ -12,4 +12,4 @@
 9. select the hunter file for the scenario
 10. run Rancor
 11. monitor 
-12. save datafiles for GPWR and Rancor
+12. save datafiles for <strike>GPWR</strike> and Rancor
