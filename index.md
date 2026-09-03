@@ -7,6 +7,8 @@ The goal of Rancor is to support research operations in advanced and novel proce
 
 ![Paper with Gear](wiki_icons/Setup.png)   [Getting Started](Getting-Started) - How to Install and Run Rancor
 
+![Rancor](wiki_icons/Rancor.png)   [Training Matierals](training) - Learn How to Operate and Navigate RANCOR
+
 ![Labcoat](wiki_icons/LabCoat.png)   [Experimenter Guide](Experimenter-Guide) - Information for Researchers
 
 ## Simulator Description
