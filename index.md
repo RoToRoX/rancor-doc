@@ -1,71 +1,34 @@
-# **Welcome to the RANCOR Simulation Training**
+Welcome to the Rancor wiki page. Most of the content is public, but some requires access to the rancor-release and rancor-procedures repositories. Make sure you have access and are logged in to view these resources.
 
-RANCOR is a nuclear reactor simulation designed to familiarize users with nuclear reactor operations. The simulation provides an environment where users can learn how reactor systems behave, how operators interact with the plant, and how operational decisions can affect overall plant performance.
+# Rancor Overview
+The Rancor microworld simulates a simplified nuclear process comprised of a nuclear reactor core that provides the heat source for gamified water-based Rankine cycle simulation. In fact, the name Rancor, bestowed upon the microworld, was formed by combining the first part of the term Rankine with an abbreviation of the term core to denote a nuclear reactor core as the boiler within the Rankine cycle.
 
-## **1. Overview**
+The goal of Rancor is to support research operations in advanced and novel process control industries HMI design and human factors.
 
-This training site is designed to help you become familiar with RANCOR and understand the different components of the simulation. The training material is organized into four primary areas: **Integrated Plant Operations, Generation, Procedures, and Crew Roles and Responsibilities.**
+![Paper with Gear](wiki_icons/Setup.png)   [Getting Started](Getting-Started) - How to Install and Run Rancor
 
-### **2. Integrated Plant Operations**
+![Labcoat](wiki_icons/LabCoat.png)   [Experimenter Guide](Experimenter-Guide) - Information for Researchers
 
-This section introduces reactor physics, system-level thermal hydraulics, and the operational aspects of the simulated plant. It explains how these areas work together to provide a complete picture of plant behavior and operation.
+## Simulator Description
 
-Topics include:
+The Rancor Microworld is a simplified nuclear power plant simulator. It represents the process of an integrated pressurized light water reactor core with a secondary Rankine cycle turbine/generator. The reactor core is governed by simplified core physics. Operators have the ability to raise and lower control rods to change the reactivity and consequently generate more or less electricity. The microworld provides a digital human machine interface for operating and monitoring the plant efficiently to maximize profits within the simulation.
 
-* Reactor physics
-* Thermal hydraulics
-* Plant systems
-* Instruments and indications
-* Alarms
-* Control systems
-* Operator actions
+A **water-based Rankine cycle**, is model describing the energy and associated phase changes of a fluid to vapor to convert the thermal energy from the steam into mechanical energy used to spin a turbine and generate electricity.
 
-You will learn how changes in one part of the plant can affect other systems and how operators use instruments, alarms, procedures, and controls to monitor and respond to changing plant conditions.
+The thermohydraulics of the simulation is roughly approximated by the design specifications of a **small modular reactor**. The model conserves mass and enthalpy. The core heating and enthalpy losses use difference equations and are parameterized using realistic units. The state change and flow dynamics are largely gamified with little to no fidelity beyond conserving mass. On the primary side, natural circulation increases monotonically with temperature. Turning on reactor coolant pumps increases flow. The steam generators are implemented such that the water level on the secondary side determines the generator’s efficiency. Participants are incentivized to maximize efficiency of operating the plant by balancing efficiency with a gamified revenue calculation.
 
-### **3. Generation**
+For more information see the [Detailed Simulator Description](Detailed-Simulator-Description).
 
-A nuclear power plant does more than operate a reactor, it also generates electricity. Operator decisions and plant conditions can influence both the amount of energy produced and the economic performance of the plant.
+## Use Cases
+The Rancor microworld serves to perform rapid prototyping and human factors testing of novel control room design concepts due its reduced scale and ease of developing new components. Use of the microworld is primarily intended for research purposes and to support the continued development of modern, digital reactor control interfaces. The microworld gives researchers and designers a broad selection of faults, manipulations, and process modifications to test against and develop an understanding of what impacts a participant's ability to successfully operate the microworld.
 
-This section introduces the generation aspects of RANCOR and explains how operational decisions can affect:
+## Web-API
 
-* Electrical generation
-* Plant power output
-* Plant performance
-* Revenue generation
-* Financial penalties associated with operational decisions
+Rancor has a built-in Web-API to support the client server functionality. See [Web-API](Web-API) for more information.
 
-Understanding these relationships helps demonstrate how reactor operations, electrical generation, and operational decision-making are connected.
+## Rancor CLI arguments
 
-### **4. Procedures**
+Scenarios, settings, and other parameters can be configured through command line arguments. For more information see [Rancor CLI Options](rancor-cli-options.md)
 
-Throughout the simulation, you will use procedures to determine the appropriate actions for different plant conditions. RANCOR provides access to both traditional paper procedures and newer computer-based procedures.
-
-This section explains how to locate, understand, and use the different procedure formats. You will also become familiar with three primary categories of operating procedures:
-
-* **Operating Procedures (OP)** — Used during normal plant operations and routine activities.
-* **Abnormal Operating Procedures (AOP)** — Used when plant conditions or equipment are not operating as expected.
-* **Emergency Operating Procedures (EOP)** — Used to guide the crew's response to emergency or accident conditions.
-
-Understanding how and when procedures are used is an important part of successfully operating the RANCOR simulation.
-
-### **5. Crew Roles and Responsibilities**
-
-Reactor operation is a team activity. Effective communication, clearly defined responsibilities, and coordination between crew members are essential to maintaining awareness of plant conditions and successfully completing operational tasks.
-
-This section introduces the three primary crew roles represented in RANCOR:
-
-* **Certified Observer (CO)**
-* **Reactor Operator (RO)**
-* **Senior Reactor Operator (SRO)**
-
-You will learn about the responsibilities associated with each role, how tasks and authority are assigned, and how crew members communicate with one another during plant operations.
-
-Particular attention is given to effective crew communication, including techniques such as **three-way communication**, which help ensure that information and operator actions are clearly understood by the operating crew.
-
----
-
-## **1.1 Getting Started**
-
-If this is your first time using RANCOR, begin with the **Integrated Plant Operations** training to develop an understanding of basic plant behavior, instrumentation, alarms, and controls. From there, continue through the remaining sections to become familiar with generation, procedures, and crew responsibilities.
-
-The goal of this training is not only to teach you how to interact with the RANCOR simulation, but also to help you understand **why the simulated plant responds the way it does and how operator decisions influence plant behavior.**
+### Copyright
+Copyright in software entitled, "RANCOR Microworld Simulation Environment for Nuclear Process Control", copyright assertion extension granted by DOE to BEA on 9/27/18, for a period of ten (10) years, having BEA Attorney Docket No. CW-18-08.
