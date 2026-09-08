@@ -22,6 +22,8 @@ Topics include:
 
 You will learn how changes in one part of the plant can affect other systems and how operators use instruments, alarms, procedures, and controls to monitor and respond to changing plant conditions.
 
+Go to [Plant Operations](https://github.com/RoToRoX/rancor-doc/blob/master/plantops.md)
+
 ### **3. Generation**
 
 A nuclear power plant does more than operate a reactor, it also generates electricity. Operator decisions and plant conditions can influence both the amount of energy produced and the economic performance of the plant.
