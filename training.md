@@ -22,7 +22,7 @@ Topics include:
 
 You will learn how changes in one part of the plant can affect other systems and how operators use instruments, alarms, procedures, and controls to monitor and respond to changing plant conditions.
 
-Go to [Plant Operations](https://github.com/RoToRoX/rancor-doc/blob/master/plantops.md)
+Go to [Plant Operations](plantops.md)
 
 ### **3. Generation**
 
@@ -38,6 +38,8 @@ This section introduces the generation aspects of RANCOR and explains how operat
 
 Understanding these relationships helps demonstrate how reactor operations, electrical generation, and operational decision-making are connected.
 
+Go to [Generation](generation.md)
+
 ### **4. Procedures**
 
 Throughout the simulation, you will use procedures to determine the appropriate actions for different plant conditions. RANCOR provides access to both traditional paper procedures and newer computer-based procedures.
@@ -49,6 +51,8 @@ This section explains how to locate, understand, and use the different procedure
 * **Emergency Operating Procedures (EOP)** — Used to guide the crew's response to emergency or accident conditions.
 
 Understanding how and when procedures are used is an important part of successfully operating the RANCOR simulation.
+
+Go to [Procedures](procedure.md)
 
 ### **5. Crew Roles and Responsibilities**
 
@@ -63,6 +67,8 @@ This section introduces the three primary crew roles represented in RANCOR:
 You will learn about the responsibilities associated with each role, how tasks and authority are assigned, and how crew members communicate with one another during plant operations.
 
 Particular attention is given to effective crew communication, including techniques such as **three-way communication**, which help ensure that information and operator actions are clearly understood by the operating crew.
+
+Go to [Crew Roles and Responsibilities](crewroles.md)
 
 ---
 
