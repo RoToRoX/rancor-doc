@@ -16,30 +16,21 @@ One of the terms that is unavoidable when discussing nuclear reactors is really 
 
 The neutron lifecycle yields a relationship between N<sub>o</sub> and N<sup>'</sup> that can be rearranged to produce the effective multiplication factor via what is known as the six-factor formula. The original formula can be seen in Equation 1 below, with the rearranged formula in Equation 2.
 
-$$
-N' = N_o \rho f \eta \epsilon \mathcal{L}_f \mathcal{L}_{th}
-\tag{1}
-$$
+**N′ = N<sub>o</sub> ρfηε ℒ<sub>f</sub>ℒ<sub>th</sub>** &nbsp;&nbsp; (1)
 
-$$
-k_{eff} =
-\frac{N'}{N_o}
-=
-\rho f \eta \epsilon \mathcal{L}_f \mathcal{L}_{th}
-\tag{2}
-$$
+**k<sub>eff</sub> = N′ / N<sub>o</sub> = ρfηε ℒ<sub>f</sub>ℒ<sub>th</sub>** &nbsp;&nbsp; (2)
 
 Where:
 
 | Symbol | Definition |
 | --- | --- |
-| $\rho$ | Resonance escape probability |
-| $f$ | Thermal utilization factor |
-| $\eta$ | Reproduction factor |
-| $\epsilon$ | Fast fission factor |
-| $\mathcal{L}_{th}$ | Thermal non-leakage factor |
-| $\mathcal{L}_{f}$ | Fast non-leakage factor |
-| $k_{eff}$ | Effective multiplication factor |
+| ρ | Resonance escape probability |
+| *f* | Thermal utilization factor |
+| η | Reproduction factor |
+| ε | Fast fission factor |
+| ℒ<sub>th</sub> | Thermal non-leakage factor |
+| ℒ<sub>f</sub> | Fast non-leakage factor |
+| *k*<sub>eff</sub> | Effective multiplication factor |
 
 A reactor is **subcritical** when the number of neutrons in the succeeding generation (N<sup>'</sup>) is less than the number of neutrons in the preceding generation (N<sub>o</sub>). This would mean reactor power is going down over time. 
 
@@ -49,65 +40,29 @@ A reactor is **supercritical** when the number of neutrons in the succeeding gen
 
 There is a plethora of equations that can explain how reactor power changes in response to various changes; however, operators rarely do the actual math when operating, instead relying on relationships derived from knowledge of such equations and operating experience. The easiest of these equations to develop this relationship is the point **kinetics equation**, seen in Equation 3 below. 
 
-$$
-\frac{d}{dt}P(t)
-=
-\left(
-\frac{\rho-\beta}{\Lambda}
-\right)P(t)
-+
-\sum_{i=1}^{6}\lambda_i C_i(t)
-\tag{3}
-$$
+**dP(t)/dt = ((ρ − β) / Λ)P(t) + Σᵢ₌₁⁶ λ<sub>i</sub>C<sub>i</sub>(t)** &nbsp;&nbsp; (3)
 
 Where:
 
 | Symbol | Definition |
 | --- | --- |
-| $P(t)$ | Reactor power level |
-| $\beta$ | Delayed neutron fraction |
-| $\Lambda$ | Prompt neutron generation time |
-| $\displaystyle \sum_{i=1}^{6} \lambda_i C_i(t)$ | Contribution of delayed neutrons to reactor power level |
-| $\displaystyle \rho(t)=\frac{k_{eff}-1}{k_{eff}}\approx\delta k$ | Amount the reactor deviates from criticality |
+| *P(t)* | Reactor power level |
+| β | Delayed neutron fraction |
+| **Λ** | Prompt neutron generation time |
+| Σᵢ₌₁⁶ λ<sub>i</sub>C<sub>i</sub>(t) | Contribution of delayed neutrons to reactor power level |
+| ρ(t) = (k<sub>eff</sub> − 1) / k<sub>eff</sub> ≈ δk | Amount the reactor deviates from criticality |
 
 There are several contributions to the reactor’s deviation from **criticality**, but they can largely be combined into temperature, shims, poisons and fuel. These can be seen below in Equation 4. 
 
-$$
-\delta k
-=
-\delta k_T
-+
-\delta k_{shim}
-+
-\delta k_{pois}
-+
-\delta k_{fuel}
-\tag{4}
-$$
+**δk = δk<sub>T</sub> + δk<sub>shim</sub> + δk<sub>pois</sub> + δk<sub>fuel</sub>** &nbsp;&nbsp; (4)
 
 Adapting Equation 4 to look at how these contributions change over time yields Equation 5. 
 
-$$
-\Delta \delta k
-=
-\Delta \delta k_T
-+
-\Delta \delta k_{shim}
-+
-\Delta \delta k_{pois}
-+
-\Delta \delta k_{fuel}
-\tag{5}
-$$
+**Δδk = Δδk<sub>T</sub> + Δδk<sub>shim</sub> + Δδk<sub>pois</sub> + Δδk<sub>fuel</sub>** &nbsp;&nbsp; (5)
 
 Two assumptions in this equation tease out a relationship that is **critical** to operations. The first can be seen assuming the reactor is observed instantaneously ($t \to 0$). In an instant, the concentration of both fuel and poisons can be assumed constant ($\Delta \delta k_{pois} = 0$ and $\Delta \delta k_{fuel}$)  The next is the assumption that the reactor was **initially** critical and, due to temperature feedback, will return to criticality ($\Delta \delta k = 0$). This results in the relationship visible in Equation 6. 
 
-$$
--\Delta \delta k_T
-=
-\Delta \delta k_{shim}
-\tag{6}
-$$
+**−Δδk<sub>T</sub> = Δδk<sub>shim</sub>** &nbsp;&nbsp; (6)
 
 This relationship conveys the principle that when the reactor is past the point of adding heat, changes in rod position will be compensated by changes in temperature. When rods are shimmed outward, increasing the reactivity in the reactor by removing negative reactivity from the rods. Reactor power rises in response, resulting in a rise in temperature within the reactor. This illustrates an important safety feature present in most reactor designs and all light water reactors known as **negative temperature feedback**. 
 
@@ -119,18 +74,15 @@ Conversely, if the reactor temperature decreases, the moderator becomes more eff
 
 Control of a nuclear reactor is possible because of the presence of delayed neutrons. The reactor period, or the time it takes for reactor to increase by a multiple of e (Euler’s number, or $\approx 2.7$), changes significantly with delayed neutrons and can be calculated using Equation 6 [^1]. 
 
-$$
-T = \frac{l}{(k - 1)}
-\tag{6}
-$$
+**T = l / (k − 1)** &nbsp;&nbsp; (6)
 
 Where:
 
 | Symbol | Definition |
 | --- | --- |
-| $T$ | Reactor period (seconds) |
-| $l$ | Neutron lifetime |
-| $k$ | Multiplication factor |
+| *T* | Reactor period (seconds) |
+| *l* | Neutron lifetime |
+| *k* | Multiplication factor |
 
 Without delayed neutrons, neutron lifetime ($l$) is approximately $2∗10^−5 seconds. If we assume a 10 pcm reactivity insertion, making the multiplication factor (k) 1.0001, the reactor period would be 0.2 seconds. This means that every second reactor power would climb by $e^5$, or nearly 150 times the original power [^1]. When the reactor is supercritical from prompt neutrons alone, or prompt-supercritical, it can behave in this manner  .
 
@@ -145,77 +97,27 @@ The reactor generates heat that is transferred to the secondary via the SG, wher
 
 The **thermal power** of the reactor can be expressed via Equation 7. 
 
-$$
-\dot{Q}_{Rx}
-=
-\dot{m}_{Rx}\,c_{p,Rx}\left(T_H - T_C\right)
-\tag {7}
-$$
+**Q̇<sub>Rx</sub> = ṁ<sub>Rx</sub> c<sub>p,Rx</sub> (T<sub>H</sub> − T<sub>C</sub>)** &nbsp;&nbsp; (7)
 
 Equation 8 demonstrates how to calculate the thermal power of the steam generator, while Equation 10 is for calculating the thermal power of the secondary. At steady state with the feedwater control valves in automatic, these equations should be equal, meaning $\dot{Q}_{Rx} = \dot{Q}_{SQ} = \dot{Q}_{Sec}$. Equation 9 is a method to connect the $T_{AVG}$ to the hot and cold temperatures present in Equation 7. 
 
-$$
-\dot{Q}_{SG}
-=
-(UA)_{SG}
-\left(T_{AVG} - T_{Stm}\right)
-\tag{8}
-$$
+**Q̇<sub>SG</sub> = (UA)<sub>SG</sub> (T<sub>AVG</sub> − T<sub>Stm</sub>)** &nbsp;&nbsp; (8)
 
-$$
-T_{AVG}
-=
-\frac{T_H + T_C}{2}
-\tag{9}
-$$
+**T<sub>AVG</sub> = (T<sub>H</sub> + T<sub>C</sub>) / 2** &nbsp;&nbsp; (9)
 
-$$
-\dot{Q}_{Sec}
-=
-\dot{m}_{Sec}
-\left(h_{Stm} - h_{Fw}\right)
-\tag{10}
-$$
+**Q̇<sub>Sec</sub> = ṁ<sub>Sec</sub> (h<sub>Stm</sub> − h<sub>Fw</sub>)** &nbsp;&nbsp; (10)
 
 Equation 10 can similarly be expressed as the sum of the thermal power rejected via the condenser and the work output of the turbine, as shown in Equation 11. 
 
-$$
-\dot{Q}_{Sec}
-=
-\dot{Q}_{COND} + \dot{W}_{Turb}
-\tag{11}
-$$
+**Q̇<sub>Sec</sub> = Q̇<sub>COND</sub> + Ẇ<sub>Turb</sub>** &nbsp;&nbsp; (11)
 
 The heat rejected via the condensate can be calculated using Equation 12. At steady state, $\dot{Q}_{COND} = \dot{Q}_{Sink}$ the heat input to the sink calculated using Equation 13.
 
-$$
-\dot{Q}_{COND}
-=
-(UA)_{COND}
-\left(
-T_{COND} - T_{Sink,AVE}
-\right)
-\tag{12}
-$$
+**Q̇<sub>COND</sub> = (UA)<sub>COND</sub> (T<sub>COND</sub> − T<sub>Sink,AVE</sub>)** &nbsp;&nbsp; (12)
 
-$$
-\dot{Q}_{Sink}
-=
-\dot{m}_{Sink} c_{p,Sink}
-\left(
-T_{Sink,out} - T_{Sink,in}
-\right)
-\tag{13}
-$$
+**Q̇<sub>Sink</sub> = ṁ<sub>Sink</sub> c<sub>p,Sink</sub> (T<sub>Sink,out</sub> − T<sub>Sink,in</sub>)** &nbsp;&nbsp; (13)
 
-$$
-T_{Sink,AVE}
-=
-\frac{
-T_{Sink,in} + T_{Sink,out}
-}{2}
-\tag{14}
-$$
+**T<sub>Sink,AVE</sub> = (T<sub>Sink,in</sub> + T<sub>Sink,out</sub>) / 2** &nbsp;&nbsp; (14)
 
 [^1]: Point Kinetics equations: Definition & derivation. Nuclear Power. (2022, January 27). https://www.nuclear-power.com/nuclear-power/reactor-physics/reactor-dynamics/point-kinetics-equations/  
 
@@ -261,13 +163,13 @@ The diagram below shows a simple representation of a nuclear reactor.
 
 To help explain the different elements of the simulation, the following sections will use a similar layout with the corresponding elements highlighted.
 
-![Simple Nuclear Reactor Diagram](images/simpnuckdiagram.png){ width="500" }
+![Simple Nuclear Reactor Diagram](images/simplenuclearreactordiagram.jpg){ width="500" }
 
 Similar to the diagram above, this diagram shows the corresponding elements within RANCOR. There is more information displayed here, so the interface may seem overwhelming at first. Using the colored boxes from the previous diagram can help identify the different elements.
 
 Again, the **light blue** box represents the cool water leading into the reactor (**orange**). The hot water (**red**) then leads to the coolant (**dark blue**), down into the steam generator (**pink**), and finally to the turbine and condenser (**yellow**).
 
-![System Elements of RANCOR](images/systemelements.png)
+![System Elements of RANCOR](images/elementpic.png)
 
 This diagram also introduces valves and pumps.
 
@@ -289,41 +191,30 @@ When opening RANCOR, a small control window will appear. This window can be easy
 
 The images below show the control window **before the simulation is started** and **while the simulation is running**.
 
-##### **Run and Pause**
+##### **Control Window**
 
-When RANCOR is first opened, the control window displays a **red "Run" button**. Selecting **Run** starts the simulation.
+When RANCOR is first opened, the control window displays a **"Run" button**. Selecting **Run** starts the simulation.
 
 Before selecting **Run**, you can still view the controls, instruments, and other simulation elements; however, the simulation is not actively running, so you will not see how the plant responds over time.
 
-Once **Run** is selected, the button changes to a **"Pause" button**. Selecting **Pause** temporarily stops the simulation. The button will then return to **Run**, allowing you to continue the simulation when you are ready.
+Once **Run** is selected, you can also press the **"Freeze" button**. Selecting **Freeze** temporarily stops the simulation. The option for **Run** will still be available, allowing you to continue the simulation when you are ready.
 
-![RANCOR control window before starting the simulation](images/runscenario.png)
+![RANCOR control window before starting the simulation](images/runandfreeze.png)
 
 *RANCOR control window displaying the **Run** button.*
 
-![RANCOR control window while the simulation is running](images/pausescenario.png)
-
-*RANCOR control window displaying the **Pause** button.*
-
-##### **Snap and Screenshot**
-
-The **Snap** and **Screenshot** options are available for capturing images of the simulation.
-
-##### **Exit**
 
 The **Exit** button is located in the upper corner of the window. Selecting this button will shut down the simulation.
 
-##### **Time and Messages**
-
 At the bottom of the window, you can see the **simulation time** and a **message area**. These messages provide updates about the current state of the simulation, such as when the simulation is started, paused, or restarted.
 
-Keeping this window visible while using RANCOR makes it easier to check whether the simulation is currently **running or paused** and provides quick access to the basic simulation controls.
+Keeping this window visible while using RANCOR makes it easier to check whether the simulation is currently **running or freezed** and provides quick access to the basic simulation controls.
 
 #### **2.2.3.2 Running Simulation Controls**
 
 Similar to the **Instrument** section, we will use the same simplified nuclear reactor diagram to help explain the different controls within RANCOR. The colored boxes represent different areas of the plant and will make it easier to connect each control to the system or component it affects.
 
-![Simple Nuclear Power Plant Diagram: Controls](images/simpnukecontr.jpg){ width="500" }
+![Simple Nuclear Power Plant Diagram: Controls](images/simplenuclearreactordiagram.jpg){ width="500" }
 
 * The **orange** box represents the **reactor**.
 * The **purple** boxes represent the **pumps**.
@@ -336,7 +227,7 @@ The following sections will use these colors to identify the corresponding contr
 
 This next image demonstrates what the controls look like within RANCOR. The colored boxes highlight the different control areas available to the operator.
 
-![Unit 1 Controls](images/unit1.controls.png)
+![Unit 1 Controls](images/controlsrancorpic.png)
 
 - The **orange** boxes represent the **reactor controls**, where the operator can choose between automatic and manual control.
 - The **purple** boxes represent the **pump controls**, where the operator can turn pumps on or off.

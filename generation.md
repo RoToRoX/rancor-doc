@@ -61,15 +61,11 @@ The goal is to keep generation within **5 MW of demand**. If generation remains 
 
 For example, if demand is:
 
-$$
-100\text{ MW}
-$$
+**100 MW**
 
 the acceptable generation range is:
 
-$$
-95\text{ MW} \leq Gross \leq 105\text{ MW}
-$$
+**95 MW ≤ Gross ≤ 105 MW**
 
 !!! important
 You do not need to match demand perfectly, but you should try to remain within the allowed **±5 MW demand band**.
@@ -168,17 +164,15 @@ Net generation is what remains after pump power is subtracted from gross generat
 
 Gross generation is determined using:
 
-$$
-\text{Gross Generation} = \frac{d}{dt}(sgQ)k
-$$
+**Gross Generation = d(sgQ)/dt × k**
 
 Where:
 
 | Symbol | Definition |
 | --- | --- |
-| $\frac{d}{dt}$ | Derivative, or rate of change |
-| $sgQ$ | Secondary-side thermal power |
-| $k$ |	Scaling factor |
+| d/dt | Derivative, or rate of change |
+| *sgQ* | Secondary-side thermal power |
+| *k* | Scaling factor |
 
 The completed calculation provides the gross generation value used by the simulator.
 
@@ -188,21 +182,18 @@ Although revenue is based on gross generation, net generation is still useful fo
 
 Net generation is calculated as:
 
-$$
-Net = Gross - PumpPower
-$$
+**Net = Gross − PumpPower**
 
 If you already know the net generation and pump power, this relationship can also be rearranged to find gross generation:
 
-$$
-Gross = Net + PumpPower
-$$
+**Gross = Net + PumpPower**
+
 
 The pump power used in the net generation calculation comes from the reactor coolant pumps and feedwater pumps.
 
-$$
-PumpPower = ReactorCoolantPump + FeedWaterPump
-$$
+
+**PumpPower = ReactorCoolantPump + FeedWaterPump**
+
 
 This explains why gross and net generation can be different even though revenue is calculated from the gross value.
 
@@ -212,50 +203,40 @@ RANCOR continuously updates its economic calculations while the simulation is ru
 
 By default, RANCOR updates every **100 milliseconds (ms)**:
 
-$$
-1\ tick = 100\ ms = 0.1\ seconds
-$$
+**1 tick = 100 ms = 0.1 seconds**
 
 The tick interval is **configurable**, meaning the amount of time between model updates can be changed. However, **100 ms is the default setting**.
 
 For each tick, RANCOR uses the current gross generation and the amount of model time that has passed:
 
-$$
-GeneratedEnergy = Gross \times dt \times 1000
-$$
+**GeneratedEnergy = Gross × dt × 1000**
 
 Where:
 
-| Symbol            | Definition                                       |
-| ----------------- | ------------------------------------------------ |
-| $Gross$           | Current gross generation                         |
-| $dt$              | Amount of model time that passes during the tick |
-| $GeneratedEnergy$ | Generation calculated for the current tick       |
+| Symbol | Definition |
+| --- | --- |
+| *Gross* | Current gross generation |
+| *dt* | Amount of model time that passes during the tick |
+| *GeneratedEnergy* | Generation calculated for the current tick |
 
 At the default 100 ms update interval:
 
-$$
-dt = 0.1\text{ seconds}
-$$
+**dt = 0.1 seconds**
 
 The generation calculated during the tick is then combined with the electrical rate to determine the revenue earned during that interval:
 
-$$
-Revenue_{tick} = GeneratedEnergy \times ElectricRate
-$$
+**Revenue<sub>tick</sub> = GeneratedEnergy × ElectricRate**
 
 Where:
 
-| Symbol           | Definition                             |
-| ---------------- | -------------------------------------- |
-| $ElectricRate$   | Electrical rate used by the simulation |
-| $Revenue_{tick}$ | Revenue earned during the current tick |
+| Symbol | Definition |
+| --- | --- |
+| *ElectricRate* | Electrical rate used by the simulation |
+| Revenue<sub>tick</sub> | Revenue earned during the current tick |
 
 The electrical rate used by RANCOR is:
 
-$$
-ElectricRate = $0.10/\text{kWh}
-$$
+**ElectricRate = $0.10 kWh**
 
 As additional ticks occur, the calculated revenue is added to the running ledger, allowing the **Revenue** display to continuously update throughout the simulation.
 
