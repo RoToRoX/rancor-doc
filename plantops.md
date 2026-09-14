@@ -1,3 +1,8 @@
+---
+layout: default
+title: Integrated Plant Operations
+---
+
 # **2. Integrated Plant Operations**
 
 When operating, operators can tell you what the plant is going to do based on their actions and even tell you what is happening in a region they do not have explicit indication of based on the instrumentation available to them. This is possible because they can build a maintain a model of the plant in their head through their understanding of the fundamental relationships and their operational experience. This allows operators to predict plant conditions relatively accurately without explicitly doing any true math. 
@@ -16,53 +21,98 @@ One of the terms that is unavoidable when discussing nuclear reactors is really 
 
 The neutron lifecycle yields a relationship between N<sub>o</sub> and N<sup>'</sup> that can be rearranged to produce the effective multiplication factor via what is known as the six-factor formula. The original formula can be seen in Equation 1 below, with the rearranged formula in Equation 2.
 
-**N′ = N<sub>o</sub> ρfηε ℒ<sub>f</sub>ℒ<sub>th</sub>** &nbsp;&nbsp; (1)
+$$
+N' = N_o \rho f \eta \epsilon \mathcal{L}_f \mathcal{L}_{th}
+\tag{1}
+$$
 
-**k<sub>eff</sub> = N′ / N<sub>o</sub> = ρfηε ℒ<sub>f</sub>ℒ<sub>th</sub>** &nbsp;&nbsp; (2)
+$$
+k_{eff}
+=
+\frac{N'}{N_o}
+=
+\rho f \eta \epsilon \mathcal{L}_f \mathcal{L}_{th}
+\tag{2}
+$$
 
 Where:
 
 | Symbol | Definition |
 | --- | --- |
-| ρ | Resonance escape probability |
-| *f* | Thermal utilization factor |
-| η | Reproduction factor |
-| ε | Fast fission factor |
-| ℒ<sub>th</sub> | Thermal non-leakage factor |
-| ℒ<sub>f</sub> | Fast non-leakage factor |
-| *k*<sub>eff</sub> | Effective multiplication factor |
+| $\rho$ | Resonance escape probability |
+| $f$ | Thermal utilization factor |
+| $\eta$ | Reproduction factor |
+| $\epsilon$ | Fast fission factor |
+| $\mathcal{L}_{th}$ | Thermal non-leakage factor |
+| $\mathcal{L}_f$ | Fast non-leakage factor |
+| $k_{eff}$ | Effective multiplication factor |
+A reactor is **subcritical** when the number of neutrons in the succeeding generation $(N')$ is less than the number of neutrons in the preceding generation $(N_o)$. This would mean reactor power is going down over time. 
 
-A reactor is **subcritical** when the number of neutrons in the succeeding generation (N<sup>'</sup>) is less than the number of neutrons in the preceding generation (N<sub>o</sub>). This would mean reactor power is going down over time. 
-
-A reactor is **supercritical** when the number of neutrons in the succeeding generation (N<sup>'</sup>) is greater than the number of neutrons in the preceding generation (N<sub>o</sub>). This would mean reactor power is growing over time. There is a subset of supercritical that is important, known as prompt-supercritical, which means the reactor is critical off prompt neutrons alone. The importance of this will be discussed later. 
+A reactor is **supercritical** when the number of neutrons in the succeeding generation (N<sup>'</sup>) is greater than the number of neutrons in the preceding generation $(N_o)$. This would mean reactor power is growing over time. There is a subset of supercritical that is important, known as prompt-supercritical, which means the reactor is critical off prompt neutrons alone. The importance of this will be discussed later. 
 
 #### **2.1.1.2 Point Reactor Kinetics** 
 
 There is a plethora of equations that can explain how reactor power changes in response to various changes; however, operators rarely do the actual math when operating, instead relying on relationships derived from knowledge of such equations and operating experience. The easiest of these equations to develop this relationship is the point **kinetics equation**, seen in Equation 3 below. 
 
-**dP(t)/dt = ((ρ − β) / Λ)P(t) + Σᵢ₌₁⁶ λ<sub>i</sub>C<sub>i</sub>(t)** &nbsp;&nbsp; (3)
+$$
+\frac{d}{dt}P(t)
+=
+\left(
+\frac{\rho-\beta}{\Lambda}
+\right)P(t)
++
+\sum_{i=1}^{6}\lambda_i C_i(t)
+\tag{3}
+$$
 
 Where:
 
 | Symbol | Definition |
 | --- | --- |
-| *P(t)* | Reactor power level |
-| β | Delayed neutron fraction |
-| **Λ** | Prompt neutron generation time |
-| Σᵢ₌₁⁶ λ<sub>i</sub>C<sub>i</sub>(t) | Contribution of delayed neutrons to reactor power level |
-| ρ(t) = (k<sub>eff</sub> − 1) / k<sub>eff</sub> ≈ δk | Amount the reactor deviates from criticality |
+| $P(t)$ | Reactor power level |
+| $\beta$ | Delayed neutron fraction |
+| $\Lambda$ | Prompt neutron generation time |
+| $\displaystyle \sum_{i=1}^{6}\lambda_i C_i(t)$ | Contribution of delayed neutrons to reactor power level |
+| $\displaystyle \rho(t)=\frac{k_{eff}-1}{k_{eff}}\approx\delta k$ | Amount the reactor deviates from criticality |
 
 There are several contributions to the reactor’s deviation from **criticality**, but they can largely be combined into temperature, shims, poisons and fuel. These can be seen below in Equation 4. 
 
-**δk = δk<sub>T</sub> + δk<sub>shim</sub> + δk<sub>pois</sub> + δk<sub>fuel</sub>** &nbsp;&nbsp; (4)
+$$
+\delta k
+=
+\delta k_T
++
+\delta k_{shim}
++
+\delta k_{pois}
++
+\delta k_{fuel}
+\tag{4}
+$$
 
 Adapting Equation 4 to look at how these contributions change over time yields Equation 5. 
 
-**Δδk = Δδk<sub>T</sub> + Δδk<sub>shim</sub> + Δδk<sub>pois</sub> + Δδk<sub>fuel</sub>** &nbsp;&nbsp; (5)
+$$
+\Delta \delta k
+=
+\Delta \delta k_T
++
+\Delta \delta k_{shim}
++
+\Delta \delta k_{pois}
++
+\Delta \delta k_{fuel}
+\tag{5}
+$$
 
 Two assumptions in this equation tease out a relationship that is **critical** to operations. The first can be seen assuming the reactor is observed instantaneously ($t \to 0$). In an instant, the concentration of both fuel and poisons can be assumed constant ($\Delta \delta k_{pois} = 0$ and $\Delta \delta k_{fuel}$)  The next is the assumption that the reactor was **initially** critical and, due to temperature feedback, will return to criticality ($\Delta \delta k = 0$). This results in the relationship visible in Equation 6. 
 
-**−Δδk<sub>T</sub> = Δδk<sub>shim</sub>** &nbsp;&nbsp; (6)
+$$
+-\Delta \delta k_T
+=
+\Delta \delta k_{shim}
+\tag{6}
+$$
 
 This relationship conveys the principle that when the reactor is past the point of adding heat, changes in rod position will be compensated by changes in temperature. When rods are shimmed outward, increasing the reactivity in the reactor by removing negative reactivity from the rods. Reactor power rises in response, resulting in a rise in temperature within the reactor. This illustrates an important safety feature present in most reactor designs and all light water reactors known as **negative temperature feedback**. 
 
@@ -74,15 +124,18 @@ Conversely, if the reactor temperature decreases, the moderator becomes more eff
 
 Control of a nuclear reactor is possible because of the presence of delayed neutrons. The reactor period, or the time it takes for reactor to increase by a multiple of e (Euler’s number, or $\approx 2.7$), changes significantly with delayed neutrons and can be calculated using Equation 6 [^1]. 
 
-**T = l / (k − 1)** &nbsp;&nbsp; (6)
+$$
+T = \frac{l}{k - 1}
+\tag{6}
+$$
 
 Where:
 
 | Symbol | Definition |
 | --- | --- |
-| *T* | Reactor period (seconds) |
-| *l* | Neutron lifetime |
-| *k* | Multiplication factor |
+| $T$ | Reactor period (seconds) |
+| $l$ | Neutron lifetime |
+| $k$ | Multiplication factor |
 
 Without delayed neutrons, neutron lifetime ($l$) is approximately $2∗10^−5 seconds. If we assume a 10 pcm reactivity insertion, making the multiplication factor (k) 1.0001, the reactor period would be 0.2 seconds. This means that every second reactor power would climb by $e^5$, or nearly 150 times the original power [^1]. When the reactor is supercritical from prompt neutrons alone, or prompt-supercritical, it can behave in this manner  .
 
@@ -97,28 +150,79 @@ The reactor generates heat that is transferred to the secondary via the SG, wher
 
 The **thermal power** of the reactor can be expressed via Equation 7. 
 
-**Q̇<sub>Rx</sub> = ṁ<sub>Rx</sub> c<sub>p,Rx</sub> (T<sub>H</sub> − T<sub>C</sub>)** &nbsp;&nbsp; (7)
+$$
+\dot{Q}_{Rx}
+=
+\dot{m}_{Rx}\,c_{p,Rx}
+\left(T_H - T_C\right)
+\tag{7}
+$$
 
 Equation 8 demonstrates how to calculate the thermal power of the steam generator, while Equation 10 is for calculating the thermal power of the secondary. At steady state with the feedwater control valves in automatic, these equations should be equal, meaning $\dot{Q}_{Rx} = \dot{Q}_{SQ} = \dot{Q}_{Sec}$. Equation 9 is a method to connect the $T_{AVG}$ to the hot and cold temperatures present in Equation 7. 
 
-**Q̇<sub>SG</sub> = (UA)<sub>SG</sub> (T<sub>AVG</sub> − T<sub>Stm</sub>)** &nbsp;&nbsp; (8)
+$$
+\dot{Q}_{SG}
+=
+(UA)_{SG}
+\left(T_{AVG} - T_{Stm}\right)
+\tag{8}
+$$
 
-**T<sub>AVG</sub> = (T<sub>H</sub> + T<sub>C</sub>) / 2** &nbsp;&nbsp; (9)
+$$
+T_{AVG}
+=
+\frac{T_H + T_C}{2}
+\tag{9}
+$$
 
-**Q̇<sub>Sec</sub> = ṁ<sub>Sec</sub> (h<sub>Stm</sub> − h<sub>Fw</sub>)** &nbsp;&nbsp; (10)
-
+$$
+\dot{Q}_{Sec}
+=
+\dot{m}_{Sec}
+\left(h_{Stm} - h_{Fw}\right)
+\tag{10}
+$$
 Equation 10 can similarly be expressed as the sum of the thermal power rejected via the condenser and the work output of the turbine, as shown in Equation 11. 
 
-**Q̇<sub>Sec</sub> = Q̇<sub>COND</sub> + Ẇ<sub>Turb</sub>** &nbsp;&nbsp; (11)
+$$
+\dot{Q}_{Sec}
+=
+\dot{Q}_{COND}
++
+\dot{W}_{Turb}
+\tag{11}
+$$
 
 The heat rejected via the condensate can be calculated using Equation 12. At steady state, $\dot{Q}_{COND} = \dot{Q}_{Sink}$ the heat input to the sink calculated using Equation 13.
 
-**Q̇<sub>COND</sub> = (UA)<sub>COND</sub> (T<sub>COND</sub> − T<sub>Sink,AVE</sub>)** &nbsp;&nbsp; (12)
+$$
+\dot{Q}_{COND}
+=
+(UA)_{COND}
+\left(
+T_{COND} - T_{Sink,AVE}
+\right)
+\tag{12}
+$$
 
-**Q̇<sub>Sink</sub> = ṁ<sub>Sink</sub> c<sub>p,Sink</sub> (T<sub>Sink,out</sub> − T<sub>Sink,in</sub>)** &nbsp;&nbsp; (13)
+$$
+\dot{Q}_{Sink}
+=
+\dot{m}_{Sink}\,c_{p,Sink}
+\left(
+T_{Sink,out} - T_{Sink,in}
+\right)
+\tag{13}
+$$
 
-**T<sub>Sink,AVE</sub> = (T<sub>Sink,in</sub> + T<sub>Sink,out</sub>) / 2** &nbsp;&nbsp; (14)
-
+$$
+T_{Sink,AVE}
+=
+\frac{
+T_{Sink,in} + T_{Sink,out}
+}{2}
+\tag{14}
+$$
 [^1]: Point Kinetics equations: Definition & derivation. Nuclear Power. (2022, January 27). https://www.nuclear-power.com/nuclear-power/reactor-physics/reactor-dynamics/point-kinetics-equations/  
 
 [^2]: Martin, W. nuclear power. Encyclopedia Britannica. (2026, July 18). https://www.britannica.com/technology/nuclear-power  
