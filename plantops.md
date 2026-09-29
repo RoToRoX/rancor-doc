@@ -17,7 +17,7 @@ Although this takes years of experience, a similar understanding can quickly be 
 
 One of the terms that is unavoidable when discussing nuclear reactors is really a group of terms that relate to a common root, **criticality** (or just critical). A reactor is critical when the **number of neutrons in the succeeding generation is the same as the preceding generation**. This is shown in the neutron lifecycle, shown in Figure 1. 
 
-<img src="images/neutronlifecycle.png" alt="Figure 1: Neutron Life Cycle" width = "500" >
+<img src="images/neutronlifecycle.png" alt="Figure 1: Neutron Life Cycle" width = "600" >
 
 The neutron lifecycle yields a relationship between N<sub>o</sub> and N<sup>'</sup> that can be rearranged to produce the effective multiplication factor via what is known as the six-factor formula. The original formula can be seen in Equation 1 below, with the rearranged formula in Equation 2.
 
@@ -35,17 +35,46 @@ k_{eff}
 \tag{2}
 $$
 
-Where:
+<p><strong>Where:</strong></p>
 
-| Symbol | Definition |
-| --- | --- |
-| \(\rho\) | Resonance escape probability |
-| \(f\) | Thermal utilization factor |
-| \(\eta\) | Reproduction factor |
-| \(\epsilon\) | Fast fission factor |
-| \(\mathcal{L}_{th}\) | Thermal non-leakage factor |
-| \(\mathcal{L}_{f}\) | Fast non-leakage factor |
-| \(k_{eff}\) | Effective multiplication factor |
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(\rho\)</td>
+      <td>Resonance escape probability</td>
+    </tr>
+    <tr>
+      <td>\(f\)</td>
+      <td>Thermal utilization factor</td>
+    </tr>
+    <tr>
+      <td>\(\eta\)</td>
+      <td>Reproduction factor</td>
+    </tr>
+    <tr>
+      <td>\(\epsilon\)</td>
+      <td>Fast fission factor</td>
+    </tr>
+    <tr>
+      <td>\(\mathcal{L}_{th}\)</td>
+      <td>Thermal non-leakage factor</td>
+    </tr>
+    <tr>
+      <td>\(\mathcal{L}_{f}\)</td>
+      <td>Fast non-leakage factor</td>
+    </tr>
+    <tr>
+      <td>\(k_{eff}\)</td>
+      <td>Effective multiplication factor</td>
+    </tr>
+  </tbody>
+</table>
 
 A reactor is **subcritical** when the number of neutrons in the succeeding generation $(N')$ is less than the number of neutrons in the preceding generation $(N_o)$. This would mean reactor power is going down over time. 
 
