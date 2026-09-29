@@ -95,15 +95,38 @@ $$
 \tag{3}
 $$
 
-Where:
+<p><strong>Where:</strong></p>
 
-| Symbol | Definition |
-| --- | --- |
-| \(P(t)\) | Reactor power level |
-| \(\beta\) | Delayed neutron fraction |
-| \(\Lambda\) | Prompt neutron generation time |
-| \(\displaystyle \sum_{i=1}^{6}\lambda_i C_i(t)\) | Contribution of delayed neutrons to reactor power level |
-| \(\displaystyle \rho(t)=\frac{k_{eff}-1}{k_{eff}}\approx\delta k\) | Amount the reactor deviates from criticality |
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(P(t)\)</td>
+      <td>Reactor power level</td>
+    </tr>
+    <tr>
+      <td>\(\beta\)</td>
+      <td>Delayed neutron fraction</td>
+    </tr>
+    <tr>
+      <td>\(\Lambda\)</td>
+      <td>Prompt neutron generation time</td>
+    </tr>
+    <tr>
+      <td>\(\displaystyle \sum_{i=1}^{6}\lambda_i C_i(t)\)</td>
+      <td>Contribution of delayed neutrons to reactor power level</td>
+    </tr>
+    <tr>
+      <td>\(\displaystyle \rho(t)=\frac{k_{eff}-1}{k_{eff}}\approx\delta k\)</td>
+      <td>Amount the reactor deviates from criticality</td>
+    </tr>
+  </tbody>
+</table>
 
 There are several contributions to the reactor’s deviation from **criticality**, but they can largely be combined into temperature, shims, poisons and fuel. These can be seen below in Equation 4. 
 
@@ -135,7 +158,7 @@ $$
 \tag{5}
 $$
 
-Two assumptions in this equation tease out a relationship that is **critical** to operations. The first can be seen assuming the reactor is observed instantaneously ($t \to 0$). In an instant, the concentration of both fuel and poisons can be assumed constant ($\Delta \delta k_{pois} = 0$ and $\Delta \delta k_{fuel}$)  The next is the assumption that the reactor was **initially** critical and, due to temperature feedback, will return to criticality ($\Delta \delta k = 0$). This results in the relationship visible in Equation 6. 
+Two assumptions in this equation tease out a relationship that is **critical** to operations. The first can be seen assuming the reactor is observed instantaneously \((t \to 0)\). In an instant, the concentration of both fuel and poisons can be assumed constant \(\Delta \delta k_{pois} = 0\) and \(\Delta \delta k_{fuel} = 0\)  The next is the assumption that the reactor was **initially** critical and, due to temperature feedback, will return to criticality \(\Delta \delta k = 0\). This results in the relationship visible in Equation 6. 
 
 $$
 -\Delta \delta k_T
@@ -152,20 +175,37 @@ Conversely, if the reactor temperature decreases, the moderator becomes more eff
 
 #### **2.1.1.3 The Effect of Delayed Neutrons**
 
-Control of a nuclear reactor is possible because of the presence of delayed neutrons. The reactor period, or the time it takes for reactor to increase by a multiple of e (Euler’s number, or $\approx 2.7$), changes significantly with delayed neutrons and can be calculated using Equation 6 [^1]. 
+Control of a nuclear reactor is possible because of the presence of delayed neutrons. The reactor period, or the time it takes for the reactor to increase by a multiple of *e* (Euler's number, or ~2.7), changes significantly with delayed neutrons and can be calculated using Equation 6. <sup><a href="#ref1">[1]</a></sup>
 
 $$
 T = \frac{l}{k - 1}
 \tag{6}
 $$
 
-Where:
+<p><strong>Where:</strong></p>
 
-| Symbol | Definition |
-| --- | --- |
-| \(T\) | Reactor period (seconds) |
-| \(l\) | Neutron lifetime |
-| \(k\) | Multiplication factor |
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(T\)</td>
+      <td>Reactor period (seconds)</td>
+    </tr>
+    <tr>
+      <td>\(l\)</td>
+      <td>Neutron lifetime</td>
+    </tr>
+    <tr>
+      <td>\(k\)</td>
+      <td>Multiplication factor</td>
+    </tr>
+  </tbody>
+</table>
 
 Without delayed neutrons, neutron lifetime ($l$) is approximately $2∗10^−5 seconds. If we assume a 10 pcm reactivity insertion, making the multiplication factor (k) 1.0001, the reactor period would be 0.2 seconds. This means that every second reactor power would climb by $e^5$, or nearly 150 times the original power [^1]. When the reactor is supercritical from prompt neutrons alone, or prompt-supercritical, it can behave in this manner  .
 
@@ -174,9 +214,9 @@ By considering delayed neutrons, the effective neutron lifetime becomes approxim
 
 ### **2.1.2 System-Level Thermal Hydraulics**
 
-The reactor generates heat that is transferred to the secondary via the SG, where a turbine converts that thermal energy to work in the form of electricity. The steam is then condensed in the condenser before returning to the steam generator. This process is shown in Figure 2 below[^2]. 
+The reactor generates heat that is transferred to the secondary via the SG, where a turbine converts that thermal energy to work in the form of electricity. The steam is then condensed in the condenser before returning to the steam generator. This process is shown in Figure 2 below.<sup><a href="#ref2">[2]</a></sup> 
 
-<img src="images/reactorpic.png" alt="Figure 3: Reactor Diagram" width = "500">
+<img src="images/reactorpic.png" alt="Figure 3: Reactor Diagram" width = "600">
 
 The **thermal power** of the reactor can be expressed via Equation 7. 
 
@@ -253,9 +293,6 @@ T_{Sink,in} + T_{Sink,out}
 }{2}
 \tag{14}
 $$
-[^1]: Point Kinetics equations: Definition & derivation. Nuclear Power. (2022, January 27). https://www.nuclear-power.com/nuclear-power/reactor-physics/reactor-dynamics/point-kinetics-equations/  
-
-[^2]: Martin, W. nuclear power. Encyclopedia Britannica. (2026, July 18). https://www.britannica.com/technology/nuclear-power  
 
 ## **2.2 Operations**
 
@@ -265,7 +302,7 @@ This section provides an overview of the RANCOR simulation layout, including the
 
 The image below illustrates how the RANCOR simulation control room is organized and how responsibilities are divided among the operating crew.
 
-<img src="images/sim_layout.png" alt="Simulation Layout" width = "500">
+<img src="images/sim_layout.png" alt="Simulation Layout" width = "600">
 
 Starting from the rear of the control room, the **Senior Reactor Operator (SRO)** is positioned where they can maintain an overall view of the operating crew and the status of all four reactor units. This allows the SRO to maintain situational awareness, coordinate activities between the Reactor Operators, and monitor overall plant conditions.
 
@@ -297,13 +334,13 @@ The diagram below shows a simple representation of a nuclear reactor.
 
 To help explain the different elements of the simulation, the following sections will use a similar layout with the corresponding elements highlighted.
 
-<img src="images/simplenuclearreactordiagram.jpg" alt="Simple Nuclear Reactor Diagram" width = "300">
+<img src="images/simplenuclearreactordiagram.jpg" alt="Simple Nuclear Reactor Diagram" width = "600">
 
 Similar to the diagram above, this diagram shows the corresponding elements within RANCOR. There is more information displayed here, so the interface may seem overwhelming at first. Using the colored boxes from the previous diagram can help identify the different elements.
 
 Again, the **light blue** box represents the cool water leading into the reactor (**orange**). The hot water (**red**) then leads to the coolant (**dark blue**), down into the steam generator (**pink**), and finally to the turbine and condenser (**yellow**).
 
-<img src="images/elementpic.png" alt="System Elements of RANCOR" width = "500">
+<img src="images/elementpic.png" alt="System Elements of RANCOR" width = "650">
 
 This diagram also introduces valves and pumps.
 
@@ -333,7 +370,7 @@ Before selecting **Run**, you can still view the controls, instruments, and othe
 
 Once **Run** is selected, you can also press the **"Freeze" button**. Selecting **Freeze** temporarily stops the simulation. The option for **Run** will still be available, allowing you to continue the simulation when you are ready.
 
-<img src="images/runandfreeze.png" alt="RANCOR control window" width = "350">
+<img src="images/runandfreeze.png" alt="RANCOR control window" width = "450">
 
 *RANCOR control window displaying the **Run** button.*
 
@@ -381,7 +418,7 @@ During a RANCOR simulation, you may encounter several different alarms. One impo
 
 The image below is a **training illustration** of a Trip Reactor alarm. It is intended to emphasize the alarm concept and does not represent exactly how the alarm appears within the RANCOR interface.
 
-<img src="images/tripreactor.png" alt= "Trip Reactor Alarm Training Illustration" width="350">
+<img src="images/tripreactor.png" alt= "Trip Reactor Alarm Training Illustration" width="450">
 
 When an alarm occurs during the simulation, it is important to recognize the alarm, determine what caused it, and identify the appropriate response.
 
@@ -390,3 +427,26 @@ A **Trip Reactor** alarm may occur because of an operator action or a change in 
 ## **2.3 Conclusion**
 
 The **Integrated Plant Operations** section introduced the main components of RANCOR, including plant systems, instruments, controls, and alarms. Understanding how these elements work together will help you navigate the simulation and better recognize how your actions affect plant conditions.
+
+
+<h2>References</h2>
+
+<p id="ref1">
+[1] "Point Kinetics Equations: Definition & Derivation." 
+<em>Nuclear Power</em>, January 27, 2022.
+<a href="https://www.nuclear-power.com/nuclear-power/reactor-physics/reactor-dynamics/point-kinetics-equations/" target="_blank">
+Point Kinetics Equations
+</a>
+</p>
+
+<p id="ref2">
+[2] Martin, W. "Nuclear Power." 
+<em>Encyclopaedia Britannica</em>, July 18, 2026.
+<a href="https://www.britannica.com/technology/nuclear-power" target="_blank">
+Nuclear Power
+</a>
+</p>
+
+---
+
+[← Back to Training](training.md)

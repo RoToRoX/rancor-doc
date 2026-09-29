@@ -133,17 +133,53 @@ Interactive digital procedures can help users:
 
 Procedure **categories** and procedure **types** describe two different characteristics.
 
-| Procedure Category | Purpose |
-| --- | --- |
-| **OP** | Normal plant operations |
-| **AOP** | Abnormal plant conditions |
-| **EOP** | Emergency plant conditions |
+<table>
+  <thead>
+    <tr>
+      <th>Procedure Category</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>OP</strong></td>
+      <td>Normal plant operations</td>
+    </tr>
+    <tr>
+      <td><strong>AOP</strong></td>
+      <td>Abnormal plant conditions</td>
+    </tr>
+    <tr>
+      <td><strong>EOP</strong></td>
+      <td>Emergency plant conditions</td>
+    </tr>
+  </tbody>
+</table>
 
-| Procedure Type | Format |
-| --- | --- |
-| **Type 1** | Traditional paper/PDF procedure |
-| **Type 2** | Digital procedure with limited interactivity |
-| **Type 3** | Interactive digital procedure |
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Procedure Type</th>
+      <th>Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Type 1</strong></td>
+      <td>Traditional paper/PDF procedure</td>
+    </tr>
+    <tr>
+      <td><strong>Type 2</strong></td>
+      <td>Digital procedure with limited interactivity</td>
+    </tr>
+    <tr>
+      <td><strong>Type 3</strong></td>
+      <td>Interactive digital procedure</td>
+    </tr>
+  </tbody>
+</table>
 
 A procedure can therefore have both a **category** and a **type**.
 
@@ -176,3 +212,7 @@ The video below provides an example of completing the Rapid Shutdown Procedure i
 **Rapid Shutdown Procedure Video Example**
 
 [Insert video here]
+
+---
+
+[← Back to Training](training.md)

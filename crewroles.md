@@ -72,3 +72,7 @@ While an RO may concentrate on assigned equipment, controls, or procedural actio
 The CO, RO, and SRO roles work together to support effective plant operation. Successful crew performance depends not only on the technical knowledge of individual operators, but also on **communication, coordination, situational awareness, and clearly defined responsibilities**.
 
 During RANCOR simulations, users should pay attention to both the technical actions being performed and the communication occurring between crew members. Understanding how information and responsibilities move through the operating crew is an important part of learning how coordinated reactor operations are performed.
+
+---
+
+[← Back to Training](training.md)

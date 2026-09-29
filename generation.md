@@ -40,9 +40,6 @@ When the turbine/generator is **synced to the grid**, the unit can earn revenue 
 
 Revenue is based on **gross generation**, which represents generation before the electrical power used by the plant's pumps is accounted for.
 
-!!! tip "Remember"
-**Synced to the grid = the unit can earn revenue.**
-
 #### **Not Synced to the Grid**
 
 When the turbine/generator is **not synced to the grid**, the unit does **not** earn generation revenue.
@@ -62,9 +59,7 @@ RANCOR compares your **gross generation** with the current **demand**.
 
 The goal is to keep generation within **5 MW of demand**. If generation remains outside this range for more than **20 seconds**, a demand-band penalty contract is triggered.
 
-For example, if demand is: **100 MW**
-
-the acceptable generation range is:
+For example, if demand is: **100 MW** the acceptable generation range is:
 
 $$
 95\text{ MW} \leq Gross \leq 105\text{ MW}
@@ -163,13 +158,30 @@ $$
 \frac{d}{dt}(sgQ)\,k
 $$
 
-Where:
+<p><strong>Where:</strong></p>
 
-| Symbol | Definition |
-| --- | --- |
-| \(\frac{d}{dt}\) | Derivative, or rate of change |
-| \(sgQ\) | Secondary-side thermal power |
-| \(k\) | Scaling factor |
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(\frac{d}{dt}\)</td>
+      <td>Derivative, or rate of change</td>
+    </tr>
+    <tr>
+      <td>\(sgQ\)</td>
+      <td>Secondary-side thermal power</td>
+    </tr>
+    <tr>
+      <td>\(k\)</td>
+      <td>Scaling factor</td>
+    </tr>
+  </tbody>
+</table>
 
 The completed calculation provides the gross generation value used by the simulator.
 
@@ -217,13 +229,30 @@ $$
 GeneratedEnergy = Gross \times dt \times 1000
 $$
 
-Where:
+<p><strong>Where:</strong></p>
 
-| Symbol | Definition |
-| --- | --- |
-| \(Gross\) | Current gross generation |
-| \(dt\) | Amount of model time that passes during the tick |
-| \(\mathrm{GeneratedEnergy}\) | Generation calculated for the current tick |
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(Gross\)</td>
+      <td>Current gross generation</td>
+    </tr>
+    <tr>
+      <td>\(dt\)</td>
+      <td>Amount of model time that passes during the tick</td>
+    </tr>
+    <tr>
+      <td>\(\mathrm{GeneratedEnergy}\)</td>
+      <td>Generation calculated for the current tick</td>
+    </tr>
+  </tbody>
+</table>
 
 At the default 100 ms update interval:
 
@@ -239,12 +268,26 @@ Revenue_{tick}
 \mathrm{GeneratedEnergy} \times \mathrm{ElectricRate}
 $$
 
-Where:
+<p><strong>Where:</strong></p>
 
-| Symbol | Definition |
-| --- | --- |
-| \(\mathrm{ElectricRate}\) | Electrical rate used by the simulation |
-| \(Revenue_{tick}\) | Revenue earned during the current tick |
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(\mathrm{ElectricRate}\)</td>
+      <td>Electrical rate used by the simulation</td>
+    </tr>
+    <tr>
+      <td>\(Revenue_{tick}\)</td>
+      <td>Revenue earned during the current tick</td>
+    </tr>
+  </tbody>
+</table>
 
 The electrical rate used by RANCOR is:
 
@@ -273,15 +316,38 @@ $$
 GeneratedValue = Cost
 $$
 
-Where:
+<p><strong>Where:</strong></p>
 
-| Symbol | Definition |
-| --- | --- |
-| \(\mathrm{Cost}\) | Cost of operating the pumps while not synced |
-| \(\mathrm{PumpPower}\) | Power consumed by the reactor coolant and feedwater pumps |
-| \(dt\) | Amount of simulation time that passes during the tick |
-| \(\mathrm{ElectricRate}\) | Cost of electricity |
-| \(\mathrm{GeneratedValue}\) | Value calculated by the simulator for the current tick |
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(\mathrm{Cost}\)</td>
+      <td>Cost of operating the pumps while not synced</td>
+    </tr>
+    <tr>
+      <td>\(\mathrm{PumpPower}\)</td>
+      <td>Power consumed by the reactor coolant and feedwater pumps</td>
+    </tr>
+    <tr>
+      <td>\(dt\)</td>
+      <td>Amount of simulation time that passes during the tick</td>
+    </tr>
+    <tr>
+      <td>\(\mathrm{ElectricRate}\)</td>
+      <td>Cost of electricity</td>
+    </tr>
+    <tr>
+      <td>\(\mathrm{GeneratedValue}\)</td>
+      <td>Value calculated by the simulator for the current tick</td>
+    </tr>
+  </tbody>
+</table>
 
 The key difference between the two conditions is:
 
@@ -301,13 +367,30 @@ $$
 Expense = OperatingExpenseRate \times dt
 $$
 
-Where:
+<p><strong>Where:</strong></p>
 
-| Symbol | Definition |
-| --- | --- |
-| \(\mathrm{Expense}\) | Operating expense applied during the current tick |
-| \(\mathrm{OperatingExpenseRate}\) | Cost of operating the unit per model time unit |
-| \(dt\) | Amount of simulation time that passes during the tick |
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(\mathrm{Expense}\)</td>
+      <td>Operating expense applied during the current tick</td>
+    </tr>
+    <tr>
+      <td>\(\mathrm{OperatingExpenseRate}\)</td>
+      <td>Cost of operating the unit per model time unit</td>
+    </tr>
+    <tr>
+      <td>\(dt\)</td>
+      <td>Amount of simulation time that passes during the tick</td>
+    </tr>
+  </tbody>
+</table>
 
 The operating expense rate used by RANCOR is:
 
@@ -588,3 +671,7 @@ In summary:
 * To change **how frequently demand changes**, adjust `TrialLength` and/or `NumGridDemandChanges`.
 * To change the **overall demand magnitude**, adjust `GridDemandFraction`.
 * To change the **shape of the demand curve**, adjust `Season`.
+
+---
+
+[← Back to Training](training.md)
