@@ -4,7 +4,7 @@ Safe and effective reactor operations depend on a well-coordinated operating cre
 
 During RANCOR training, users may encounter three primary crew roles: **Certified Observer (CO), Reactor Operator (RO), and Senior Reactor Operator (SRO)**. Each role represents a different level of responsibility within the operating crew.
 
-<img src="images/team.png" alt="Reactor Shutdown Interactive Digital Procedure" width="500">
+<img src="images/team.png" alt="Reactor Shutdown Interactive Digital Procedure" width="200">
 
 ## **5.1 Certified Observer (CO)**
 
