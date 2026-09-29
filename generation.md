@@ -19,6 +19,8 @@ The Generation training is also divided into two sections based on the level of 
 
 * **Instructor** — Provides a more detailed explanation of how revenue and demand work within RANCOR. This section includes equations, calculations, settings, and terminology that instructors may need to understand but trainees do not need for normal simulation operation.
 
+<img src="images/generationgraphic.png" alt="Figure 3: Reactor Diagram" width = "500">
+
 ## **3.1 Trainee Section**
 
 The Generation portion of RANCOR introduces the economic side of operating the simulated plant. During a trial, your decisions can affect both the amount of simulated revenue you earn and how well your generation matches demand.

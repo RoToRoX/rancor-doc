@@ -385,7 +385,7 @@ Keeping this window visible while using RANCOR makes it easier to check whether 
 
 Similar to the **Instrument** section, we will use the same simplified nuclear reactor diagram to help explain the different controls within RANCOR. The colored boxes represent different areas of the plant and will make it easier to connect each control to the system or component it affects.
 
-<img scr="images/simplenuclearreactordiagram.jpg" alt="Simple Nuclear Power Plant Diagram" width = "500" >
+<img src="images/simplenuclearreactordiagram.jpg" alt="Simple Nuclear Power Plant Diagram" width = "500" >
 
 * The **orange** box represents the **reactor**.
 * The **purple** boxes represent the **pumps**.
@@ -398,7 +398,7 @@ The following sections will use these colors to identify the corresponding contr
 
 This next image demonstrates what the controls look like within RANCOR. The colored boxes highlight the different control areas available to the operator.
 
-<img src="images/controlsrancorpic.png" alt="Unit 1 Controls" width = "500">
+<img src="images/controlsrancorpic.png" alt="Unit 1 Controls" width = "575">
 
 - The **orange** boxes represent the **reactor controls**, where the operator can choose between automatic and manual control.
 - The **purple** boxes represent the **pump controls**, where the operator can turn pumps on or off.
