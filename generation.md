@@ -49,8 +49,6 @@ When the turbine/generator is **not synced to the grid**, the unit does **not** 
 
 The plant's pumps may still be operating and consuming electricity, so the unit can continue to have an economic cost even though it is not earning revenue.
 
-!!! tip "Remember"
-**Not synced to the grid = no generation revenue, but the unit can still have costs.**
 
 #### **Operating Expenses**
 
@@ -72,8 +70,6 @@ $$
 95\text{ MW} \leq Gross \leq 105\text{ MW}
 $$
 
-!!! important
-You do not need to match demand perfectly, but you should try to remain within the allowed **±5 MW demand band**.
 
 #### **Reactor Trip Fine**
 
@@ -83,8 +79,6 @@ If the reactor's core safety interlock trips when the vessel temperature exceeds
 
 A **SCRAM** is an automatic reactor shutdown used when the reactor needs to shut down for safety reasons.
 
-!!! warning "Reactor Trip"
-A reactor trip affects more than reactor operation—it can also have a significant impact on your economic score.
 
 #### **Fleet Performance**
 
@@ -118,9 +112,6 @@ As demand changes, continue monitoring:
 * The difference between generation and demand
 * Your running economic score
 * Plant conditions
-
-!!! tip "Key Concept"
-The goal is not to produce the maximum amount of power at all times. Instead, pay attention to **what the grid is demanding and how closely your generation matches it**.
 
 ### **3.1.3 Putting Revenue and Demand Together**
 
@@ -164,9 +155,6 @@ Gross generation is the total generation before power used by the plant's pumps 
 
 Net generation is what remains after pump power is subtracted from gross generation.
 
-!!! important
-    When the plant is synced to the grid, RANCOR bills revenue based on gross generation, not net generation.
-
 Gross generation is determined using:
 
 $$
@@ -179,9 +167,9 @@ Where:
 
 | Symbol | Definition |
 | --- | --- |
-| $\frac{d}{dt}$ | Derivative, or rate of change |
-| $sgQ$ | Secondary-side thermal power |
-| $k$ | Scaling factor |
+| \(\frac{d}{dt}\) | Derivative, or rate of change |
+| \(sgQ\) | Secondary-side thermal power |
+| \(k\) | Scaling factor |
 
 The completed calculation provides the gross generation value used by the simulator.
 
@@ -233,9 +221,9 @@ Where:
 
 | Symbol | Definition |
 | --- | --- |
-| $Gross$ | Current gross generation |
-| $dt$ | Amount of model time that passes during the tick |
-| $GeneratedEnergy$ | Generation calculated for the current tick |
+| \(Gross\) | Current gross generation |
+| \(dt\) | Amount of model time that passes during the tick |
+| \(\mathrm{GeneratedEnergy}\) | Generation calculated for the current tick |
 
 At the default 100 ms update interval:
 
@@ -255,8 +243,8 @@ Where:
 
 | Symbol | Definition |
 | --- | --- |
-| $\mathrm{ElectricRate}$ | Electrical rate used by the simulation |
-| $Revenue_{tick}$ | Revenue earned during the current tick |
+| \(\mathrm{ElectricRate}\) | Electrical rate used by the simulation |
+| \(Revenue_{tick}\) | Revenue earned during the current tick |
 
 The electrical rate used by RANCOR is:
 
@@ -265,9 +253,6 @@ $$
 $$
 
 As additional ticks occur, the calculated revenue is added to the running ledger, allowing the **Revenue** display to continuously update throughout the simulation.
-
-!!! note
-Although the default tick interval is **100 ms**, it is configurable. Therefore, calculations should use the current $\Delta t$ rather than assuming that every simulation will always use a 100 ms update interval.
 
 
 ### **3.2.1.2 Revenue When Not Synced to the Grid**
@@ -290,21 +275,18 @@ $$
 
 Where:
 
-| Symbol           | Definition                                                |
-| ---------------- | --------------------------------------------------------- |
-| $Cost$           | Cost of operating the pumps while not synced              |
-| $PumpPower$      | Power consumed by the reactor coolant and feedwater pumps |
-| $dt$             | Amount of simulation time that passes during the tick     |
-| $ElectricRate$   | Cost of electricity                                       |
-| $GeneratedValue$ | Value calculated by the simulator for the current tick    |
+| Symbol | Definition |
+| --- | --- |
+| \(\mathrm{Cost}\) | Cost of operating the pumps while not synced |
+| \(\mathrm{PumpPower}\) | Power consumed by the reactor coolant and feedwater pumps |
+| \(dt\) | Amount of simulation time that passes during the tick |
+| \(\mathrm{ElectricRate}\) | Cost of electricity |
+| \(\mathrm{GeneratedValue}\) | Value calculated by the simulator for the current tick |
 
 The key difference between the two conditions is:
 
 * **Synced to the grid:** The unit can earn revenue from gross generation.
 * **Not synced to the grid:** The unit earns **no revenue** and is instead charged for the electricity consumed by its pumps.
-
-!!! important
-    A unit that is not synced to the grid can still have an economic cost because its pumps continue to consume electricity.
 
 
 ### **3.2.1.3 Ongoing Operating Expense**
@@ -321,11 +303,11 @@ $$
 
 Where:
 
-| Symbol                 | Definition                                            |
-| ---------------------- | ----------------------------------------------------- |
-| $Expense$              | Operating expense applied during the current tick     |
-| $OperatingExpenseRate$ | Cost of operating the unit per model time unit        |
-| $dt$                   | Amount of simulation time that passes during the tick |
+| Symbol | Definition |
+| --- | --- |
+| \(\mathrm{Expense}\) | Operating expense applied during the current tick |
+| \(\mathrm{OperatingExpenseRate}\) | Cost of operating the unit per model time unit |
+| \(dt\) | Amount of simulation time that passes during the tick |
 
 The operating expense rate used by RANCOR is:
 
@@ -334,9 +316,6 @@ OperatingExpenseRate = $250 \text{ per model time unit}
 $$
 
 Unlike revenue, the ongoing operating expense is **always subtracted** from the running ledger.
-
-!!! important
-    The ongoing operating expense is applied every tick whether the unit is synced to the grid or not.
 
 
 ### **3.2.1.4 Demand-Band Penalty Contracts**
@@ -381,9 +360,6 @@ $$
 ContractCost = $0
 $$
 
-!!! important
-    Being outside the ±5 MW demand band does not immediately trigger the contract. The unit must remain outside the band long enough for **TimeOutsideDemandBand** to exceed **20 seconds**.
-
 
 ### **3.2.1.5 Reactor Trip Fine**
 
@@ -409,9 +385,6 @@ When the trip occurs:
 Because this is a **one-time fine**, the $10,000 charge is applied when the safety interlock initially trips rather than being repeatedly charged while the interlock remains engaged.
 
 A **SCRAM** is an automatic reactor shutdown that occurs when the reactor needs to shut down for safety reasons. In RANCOR, when the specified safety interlock is triggered, the reactor is automatically SCRAMMED. This stops reactor operation and also results in the one-time Reactor Trip Fine described above.
-
-!!! warning "Reactor Trip"
-    If vessel temperature exceeds **750°F**, the core safety interlock trips, the reactor is SCRAMMED, and a **$10,000 Reactor Trip Fine** is applied if the interlock was not already engaged.
 
 ### **3.2.1.6 Fleet-Level Aggregation and Fine**
 
@@ -457,10 +430,6 @@ $$
 FinalValue = CombinedValue - TotalFines
 $$
 
-!!! important
-    The fleet overproduction fine applies when total fleet net generation remains more than **5% above GridDemand for over 10 continuous seconds**. The penalty is based on how far fleet generation exceeds demand, so larger overproduction results in a larger penalty.
-
-
 ### **3.2.1.7 Summary of Revenue**
 
 RANCOR combines revenue, operating costs, penalties, and fines to track the economic performance of the plant throughout the simulation.
@@ -481,16 +450,10 @@ When calculating the overall economic value, RANCOR also accounts for several po
 
 These calculations are incorporated into the unit-level **GeneratedValue** and fleet-level **CombinedValue**, which serve as the plant's running economic score during the simulation.
 
-!!! tip "Key Concept"
-    Generating more electricity does not necessarily result in a better economic score. Revenue must be considered alongside operating expenses, demand requirements, and applicable penalties or fines.
-
 
 ## **3.2.2 Demand**
 
 The Demand section explains the demand side of the RANCOR economic model and how it relates to plant generation.
-
-!!! important
-    You are penalized if you don't match demand with generation within a certain error margin 
 
 ### **3.2.2.1 Grid Demand Calculation**
 
@@ -625,7 +588,3 @@ In summary:
 * To change **how frequently demand changes**, adjust `TrialLength` and/or `NumGridDemandChanges`.
 * To change the **overall demand magnitude**, adjust `GridDemandFraction`.
 * To change the **shape of the demand curve**, adjust `Season`.
-
-!!! note "Hard-Coded Values"
-    The **±0.05 per-unit random noise**, **60 MW per-unit assumption**, and the mapping that increments TrialTime once every **10 dispatcher ticks** are hard-coded. Changing these values requires a code change rather than a scenario/settings change.
-

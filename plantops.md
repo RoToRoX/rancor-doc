@@ -17,7 +17,7 @@ Although this takes years of experience, a similar understanding can quickly be 
 
 One of the terms that is unavoidable when discussing nuclear reactors is really a group of terms that relate to a common root, **criticality** (or just critical). A reactor is critical when the **number of neutrons in the succeeding generation is the same as the preceding generation**. This is shown in the neutron lifecycle, shown in Figure 1. 
 
-![Figure 1: Neutron Life Cycle](images/neutronlifecycle.png)
+<img src="images/neutronlifecycle.png" alt="Figure 1: Neutron Life Cycle" width = "500" >
 
 The neutron lifecycle yields a relationship between N<sub>o</sub> and N<sup>'</sup> that can be rearranged to produce the effective multiplication factor via what is known as the six-factor formula. The original formula can be seen in Equation 1 below, with the rearranged formula in Equation 2.
 
@@ -39,13 +39,14 @@ Where:
 
 | Symbol | Definition |
 | --- | --- |
-| $\rho$ | Resonance escape probability |
-| $f$ | Thermal utilization factor |
-| $\eta$ | Reproduction factor |
-| $\epsilon$ | Fast fission factor |
-| $\mathcal{L}_{th}$ | Thermal non-leakage factor |
-| $\mathcal{L}_f$ | Fast non-leakage factor |
-| $k_{eff}$ | Effective multiplication factor |
+| \(\rho\) | Resonance escape probability |
+| \(f\) | Thermal utilization factor |
+| \(\eta\) | Reproduction factor |
+| \(\epsilon\) | Fast fission factor |
+| \(\mathcal{L}_{th}\) | Thermal non-leakage factor |
+| \(\mathcal{L}_{f}\) | Fast non-leakage factor |
+| \(k_{eff}\) | Effective multiplication factor |
+
 A reactor is **subcritical** when the number of neutrons in the succeeding generation $(N')$ is less than the number of neutrons in the preceding generation $(N_o)$. This would mean reactor power is going down over time. 
 
 A reactor is **supercritical** when the number of neutrons in the succeeding generation (N<sup>'</sup>) is greater than the number of neutrons in the preceding generation $(N_o)$. This would mean reactor power is growing over time. There is a subset of supercritical that is important, known as prompt-supercritical, which means the reactor is critical off prompt neutrons alone. The importance of this will be discussed later. 
@@ -69,11 +70,11 @@ Where:
 
 | Symbol | Definition |
 | --- | --- |
-| $P(t)$ | Reactor power level |
-| $\beta$ | Delayed neutron fraction |
-| $\Lambda$ | Prompt neutron generation time |
-| $\displaystyle \sum_{i=1}^{6}\lambda_i C_i(t)$ | Contribution of delayed neutrons to reactor power level |
-| $\displaystyle \rho(t)=\frac{k_{eff}-1}{k_{eff}}\approx\delta k$ | Amount the reactor deviates from criticality |
+| \(P(t)\) | Reactor power level |
+| \(\beta\) | Delayed neutron fraction |
+| \(\Lambda\) | Prompt neutron generation time |
+| \(\displaystyle \sum_{i=1}^{6}\lambda_i C_i(t)\) | Contribution of delayed neutrons to reactor power level |
+| \(\displaystyle \rho(t)=\frac{k_{eff}-1}{k_{eff}}\approx\delta k\) | Amount the reactor deviates from criticality |
 
 There are several contributions to the reactor’s deviation from **criticality**, but they can largely be combined into temperature, shims, poisons and fuel. These can be seen below in Equation 4. 
 
@@ -133,9 +134,9 @@ Where:
 
 | Symbol | Definition |
 | --- | --- |
-| $T$ | Reactor period (seconds) |
-| $l$ | Neutron lifetime |
-| $k$ | Multiplication factor |
+| \(T\) | Reactor period (seconds) |
+| \(l\) | Neutron lifetime |
+| \(k\) | Multiplication factor |
 
 Without delayed neutrons, neutron lifetime ($l$) is approximately $2∗10^−5 seconds. If we assume a 10 pcm reactivity insertion, making the multiplication factor (k) 1.0001, the reactor period would be 0.2 seconds. This means that every second reactor power would climb by $e^5$, or nearly 150 times the original power [^1]. When the reactor is supercritical from prompt neutrons alone, or prompt-supercritical, it can behave in this manner  .
 
@@ -146,7 +147,7 @@ By considering delayed neutrons, the effective neutron lifetime becomes approxim
 
 The reactor generates heat that is transferred to the secondary via the SG, where a turbine converts that thermal energy to work in the form of electricity. The steam is then condensed in the condenser before returning to the steam generator. This process is shown in Figure 2 below[^2]. 
 
-![Figure 3: Reactor Diagram](images/reactorpic.png)
+<img src="images/reactorpic.png" alt="Figure 3: Reactor Diagram" width = "500">
 
 The **thermal power** of the reactor can be expressed via Equation 7. 
 
@@ -235,7 +236,7 @@ This section provides an overview of the RANCOR simulation layout, including the
 
 The image below illustrates how the RANCOR simulation control room is organized and how responsibilities are divided among the operating crew.
 
-![Simulation Layout](images/sim_layout.png){ width="700"}
+<img src="images/sim_layout.png" alt="Simulation Layout" width = "500">
 
 Starting from the rear of the control room, the **Senior Reactor Operator (SRO)** is positioned where they can maintain an overall view of the operating crew and the status of all four reactor units. This allows the SRO to maintain situational awareness, coordinate activities between the Reactor Operators, and monitor overall plant conditions.
 
@@ -267,13 +268,13 @@ The diagram below shows a simple representation of a nuclear reactor.
 
 To help explain the different elements of the simulation, the following sections will use a similar layout with the corresponding elements highlighted.
 
-![Simple Nuclear Reactor Diagram](images/simplenuclearreactordiagram.jpg){ width="500" }
+<img src="images/simplenuclearreactordiagram.jpg" alt="Simple Nuclear Reactor Diagram" width = "300">
 
 Similar to the diagram above, this diagram shows the corresponding elements within RANCOR. There is more information displayed here, so the interface may seem overwhelming at first. Using the colored boxes from the previous diagram can help identify the different elements.
 
 Again, the **light blue** box represents the cool water leading into the reactor (**orange**). The hot water (**red**) then leads to the coolant (**dark blue**), down into the steam generator (**pink**), and finally to the turbine and condenser (**yellow**).
 
-![System Elements of RANCOR](images/elementpic.png)
+<img src="images/elementpic.png" alt="System Elements of RANCOR" width = "500">
 
 This diagram also introduces valves and pumps.
 
@@ -303,7 +304,7 @@ Before selecting **Run**, you can still view the controls, instruments, and othe
 
 Once **Run** is selected, you can also press the **"Freeze" button**. Selecting **Freeze** temporarily stops the simulation. The option for **Run** will still be available, allowing you to continue the simulation when you are ready.
 
-![RANCOR control window before starting the simulation](images/runandfreeze.png)
+<img src="images/runandfreeze.png" alt="RANCOR control window" width = "350">
 
 *RANCOR control window displaying the **Run** button.*
 
@@ -318,7 +319,7 @@ Keeping this window visible while using RANCOR makes it easier to check whether 
 
 Similar to the **Instrument** section, we will use the same simplified nuclear reactor diagram to help explain the different controls within RANCOR. The colored boxes represent different areas of the plant and will make it easier to connect each control to the system or component it affects.
 
-![Simple Nuclear Power Plant Diagram: Controls](images/simplenuclearreactordiagram.jpg){ width="500" }
+<img scr="images/simplenuclearreactordiagram.jpg" alt="Simple Nuclear Power Plant Diagram" width = "500" >
 
 * The **orange** box represents the **reactor**.
 * The **purple** boxes represent the **pumps**.
@@ -331,7 +332,7 @@ The following sections will use these colors to identify the corresponding contr
 
 This next image demonstrates what the controls look like within RANCOR. The colored boxes highlight the different control areas available to the operator.
 
-![Unit 1 Controls](images/controlsrancorpic.png)
+<img src="images/controlsrancorpic.png" alt="Unit 1 Controls" width = "500">
 
 - The **orange** boxes represent the **reactor controls**, where the operator can choose between automatic and manual control.
 - The **purple** boxes represent the **pump controls**, where the operator can turn pumps on or off.
@@ -351,7 +352,7 @@ During a RANCOR simulation, you may encounter several different alarms. One impo
 
 The image below is a **training illustration** of a Trip Reactor alarm. It is intended to emphasize the alarm concept and does not represent exactly how the alarm appears within the RANCOR interface.
 
-![Trip Reactor Alarm Training Illustration](images/tripreactor.png){ width="350" }
+<img src="images/tripreactor.png" alt= "Trip Reactor Alarm Training Illustration" width="350">
 
 When an alarm occurs during the simulation, it is important to recognize the alarm, determine what caused it, and identify the appropriate response.
 
